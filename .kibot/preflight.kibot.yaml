@@ -1,0 +1,10 @@
+# This script is called by the .github/workflows/preflight.yml workflow to
+# run ERC and DRC checks on the design.
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: false
