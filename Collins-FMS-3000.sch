@@ -1206,13 +1206,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5550 5350 
 	1    5350 6450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 7550 5350 7550
-Wire Wire Line
-	4650 7150 4650 7250
-Connection ~ 4650 7250
-Wire Wire Line
-	4650 7250 4650 7550
 $Comp
 L power:GND #PWR05
 U 1 1 618F4CE8
@@ -1247,17 +1240,15 @@ F 3 "" H 5350 5350 50  0001 C CNN
 	1    5350 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 7050 4550 7050
 $Comp
 L power:+5V #PWR03
 U 1 1 619173DC
-P 4550 7050
-F 0 "#PWR03" H 4550 6900 50  0001 C CNN
-F 1 "+5V" H 4565 7223 50  0000 C CNN
-F 2 "" H 4550 7050 50  0001 C CNN
-F 3 "" H 4550 7050 50  0001 C CNN
-	1    4550 7050
+P 4450 7250
+F 0 "#PWR03" H 4450 7100 50  0001 C CNN
+F 1 "+5V" H 4465 7423 50  0000 C CNN
+F 2 "" H 4450 7250 50  0001 C CNN
+F 3 "" H 4450 7250 50  0001 C CNN
+	1    4450 7250
 	1    0    0    -1  
 $EndComp
 Text GLabel 6050 5650 2    50   Input ~ 0
@@ -2276,15 +2267,82 @@ Wire Wire Line
 Text Notes 2200 5050 0    50   ~ 0
 Rows - I2C address 0x20
 Text Notes 4400 5050 0    50   ~ 0
-Columns - I2C address 0x24
+Columns - I2C address 0x21
 Wire Notes Line
 	2100 4900 2100 7800
-Wire Notes Line
-	2100 7800 6450 7800
-Wire Notes Line
-	6450 7800 6450 4900
-Wire Notes Line
-	2100 4900 6450 4900
 Text Notes 2100 4850 0    50   ~ 0
 Port expansion
+Wire Wire Line
+	4650 7050 4600 7050
+Wire Wire Line
+	4600 7050 4600 7150
+Wire Wire Line
+	4600 7550 5350 7550
+Wire Wire Line
+	4650 7150 4600 7150
+Connection ~ 4600 7150
+Wire Wire Line
+	4600 7150 4600 7550
+Wire Wire Line
+	4650 7250 4450 7250
+$Comp
+L Device:C_Small C?
+U 1 1 61879E33
+P 6100 5250
+F 0 "C?" H 6192 5296 50  0000 L CNN
+F 1 "C_Small" H 6192 5205 50  0000 L CNN
+F 2 "" H 6100 5250 50  0001 C CNN
+F 3 "~" H 6100 5250 50  0001 C CNN
+	1    6100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6187BACF
+P 6700 5250
+F 0 "C?" H 6792 5296 50  0000 L CNN
+F 1 "C_Small" H 6792 5205 50  0000 L CNN
+F 2 "" H 6700 5250 50  0001 C CNN
+F 3 "~" H 6700 5250 50  0001 C CNN
+	1    6700 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5150 6400 5150
+Wire Wire Line
+	6100 5350 6400 5350
+$Comp
+L power:+5V #PWR?
+U 1 1 618AB10A
+P 6400 5150
+F 0 "#PWR?" H 6400 5000 50  0001 C CNN
+F 1 "+5V" H 6415 5323 50  0000 C CNN
+F 2 "" H 6400 5150 50  0001 C CNN
+F 3 "" H 6400 5150 50  0001 C CNN
+	1    6400 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 5150
+Wire Wire Line
+	6400 5150 6100 5150
+$Comp
+L power:GND #PWR?
+U 1 1 618AB282
+P 6400 5350
+F 0 "#PWR?" H 6400 5100 50  0001 C CNN
+F 1 "GND" H 6405 5177 50  0000 C CNN
+F 2 "" H 6400 5350 50  0001 C CNN
+F 3 "" H 6400 5350 50  0001 C CNN
+	1    6400 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 5350
+Wire Wire Line
+	6400 5350 6700 5350
+Wire Notes Line
+	2100 4900 7150 4900
+Wire Notes Line
+	7150 4900 7150 7800
+Wire Notes Line
+	2100 7800 7150 7800
 $EndSCHEMATC
