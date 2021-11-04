@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Collins-FMS-3000)(type KiCad)(uri ${KIPRJMOD}/Collins-FMS-3000.pretty)(options "")(descr ""))
+)
