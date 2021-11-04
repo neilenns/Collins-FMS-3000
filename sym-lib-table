@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Collins-FMS-3000)(type Legacy)(uri ${KIPRJMOD}/Collins-FMS-3000.lib)(options "")(descr ""))
+  (lib (name Collins-FMS-3000-rescue)(type Legacy)(uri ${KIPRJMOD}/Collins-FMS-3000-rescue.lib)(options "")(descr ""))
+)
