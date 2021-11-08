@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 2
 Title "Collins FMS 3000"
 Date "%%date%%"
-Rev "%%version**"
+Rev "%%version%%"
 Comp ""
 Comment1 ""
 Comment2 ""
