@@ -2336,50 +2336,50 @@ Wire Wire Line
 	7900 3750 9200 3750
 Wire Wire Line
 	2050 2000 9200 2000
-Text HLabel 1950 2000 0    50   Input ~ 0
+Text HLabel 1950 2000 0    50   Output ~ 0
 ROW0
-Text HLabel 1950 2350 0    50   Input ~ 0
+Text HLabel 1950 2350 0    50   Output ~ 0
 ROW1
-Text HLabel 1950 2700 0    50   Input ~ 0
+Text HLabel 1950 2700 0    50   Output ~ 0
 ROW2
-Text HLabel 1950 3050 0    50   Input ~ 0
+Text HLabel 1950 3050 0    50   Output ~ 0
 ROW3
-Text HLabel 1950 3400 0    50   Input ~ 0
+Text HLabel 1950 3400 0    50   Output ~ 0
 ROW4
-Text HLabel 1950 3750 0    50   Input ~ 0
+Text HLabel 1950 3750 0    50   Output ~ 0
 ROW5
-Text HLabel 1950 4100 0    50   Input ~ 0
+Text HLabel 1950 4100 0    50   Output ~ 0
 ROW6
-Text HLabel 1950 4450 0    50   Input ~ 0
+Text HLabel 1950 4450 0    50   Output ~ 0
 ROW7
-Text HLabel 1950 4800 0    50   Input ~ 0
+Text HLabel 1950 4800 0    50   Output ~ 0
 ROW8
-Text HLabel 1950 5150 0    50   Input ~ 0
+Text HLabel 1950 5150 0    50   Output ~ 0
 ROW9
-Text HLabel 1950 5500 0    50   Input ~ 0
+Text HLabel 1950 5500 0    50   Output ~ 0
 ROW10
-Text HLabel 2650 1600 1    50   Output ~ 0
+Text HLabel 2650 1600 1    50   Input ~ 0
 COL0
-Text HLabel 3300 1600 1    50   Output ~ 0
+Text HLabel 3300 1600 1    50   Input ~ 0
 COL1
-Text HLabel 3950 1600 1    50   Output ~ 0
+Text HLabel 3950 1600 1    50   Input ~ 0
 COL2
-Text HLabel 4600 1600 1    50   Output ~ 0
+Text HLabel 4600 1600 1    50   Input ~ 0
 COL3
-Text HLabel 5250 1600 1    50   Output ~ 0
+Text HLabel 5250 1600 1    50   Input ~ 0
 COL4
-Text HLabel 5900 1600 1    50   Output ~ 0
+Text HLabel 5900 1600 1    50   Input ~ 0
 COL5
-Text HLabel 6550 1600 1    50   Output ~ 0
+Text HLabel 6550 1600 1    50   Input ~ 0
 COL6
-Text HLabel 7200 1600 1    50   Output ~ 0
+Text HLabel 7200 1600 1    50   Input ~ 0
 COL7
-Text HLabel 7850 1600 1    50   Output ~ 0
+Text HLabel 7850 1600 1    50   Input ~ 0
 COL8
-Text HLabel 8500 1600 1    50   Output ~ 0
+Text HLabel 8500 1600 1    50   Input ~ 0
 COL9
-Text HLabel 9150 1600 1    50   Output ~ 0
+Text HLabel 9150 1600 1    50   Input ~ 0
 COL10
-Text HLabel 9800 1550 1    50   Output ~ 0
+Text HLabel 9800 1550 1    50   Input ~ 0
 COL11
 $EndSCHEMATC
