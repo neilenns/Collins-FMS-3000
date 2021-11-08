@@ -42,14 +42,14 @@ jobs:
       # Any instance of %%version%% in the schematic gets replaced with the release version.
       # Any instance of %%date%% in the schematic gets replaced with the release date and time.
       - name: Set schematic version
-        uses: jacobtomlinson/gha-find-replace@master
+        uses: jacobtomlinson/gha-find-replace@v1
         with:
           include: ".*.sch"
           find: "%%version%%"
           replace: ${{ steps.get_version.outputs.version }}
 
       - name: Set schematic date
-        uses: jacobtomlinson/gha-find-replace@master
+        uses: jacobtomlinson/gha-find-replace@v1
         with:
           include: ".*.sch"
           find: "%%date%%"
@@ -59,14 +59,14 @@ jobs:
       # Any instance of %%version%% in the schematic gets replaced with the release version.
       # Any instance of %%date%% in the schematic gets replaced with the release date and time.
       - name: Set PCB version
-        uses: jacobtomlinson/gha-find-replace@master
+        uses: jacobtomlinson/gha-find-replace@v1
         with:
           include: ".*.kicad_pcb"
           find: "%%version%%"
           replace: ${{ steps.get_version.outputs.version }}
 
       - name: Set PCB date
-        uses: jacobtomlinson/gha-find-replace@master
+        uses: jacobtomlinson/gha-find-replace@v1
         with:
           include: ".*.kicad_pcb"
           find: "%%date%%"
