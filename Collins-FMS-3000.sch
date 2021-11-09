@@ -56,7 +56,7 @@ $EndComp
 Text GLabel 2100 1200 0    50   BiDi ~ 0
 SDA
 Text GLabel 2100 1300 0    50   Input ~ 0
-SCK
+SCL
 NoConn ~ 2500 1800
 NoConn ~ 2500 1900
 $Comp
@@ -92,7 +92,7 @@ Connection ~ 3200 900
 Text GLabel 6850 1200 2    50   BiDi ~ 0
 SDA
 Text GLabel 6850 1300 2    50   Input ~ 0
-SCK
+SCL
 $Comp
 L power:+5V #PWR03
 U 1 1 626F4425
@@ -498,7 +498,7 @@ Connection ~ 8500 900
 Text GLabel 7600 1300 0    50   BiDi ~ 0
 SDA
 Text GLabel 7600 1400 0    50   Input ~ 0
-SCK
+SCL
 $Comp
 L Device:R_Small R6
 U 1 1 6193BEC3
@@ -696,12 +696,12 @@ U 61F7F1B9
 F0 "ATmega32u4" 50
 F1 "ATmega32u4.sch" 50
 F2 "SDA" B R 1500 1050 50 
-F3 "SCK" O R 1500 1150 50 
+F3 "SCL" O R 1500 1150 50 
 $EndSheet
-Text GLabel 1500 1050 2    50   BiDi ~ 0
+Text GLabel 1550 1050 2    50   BiDi ~ 0
 SDA
-Text GLabel 1500 1150 2    50   Output ~ 0
-SCK
+Text GLabel 1550 1150 2    50   Output ~ 0
+SCL
 Wire Notes Line
 	550  650  550  1650
 Wire Notes Line
@@ -824,4 +824,8 @@ F 3 "https://www.lumissil.com/assets/pdf/core/IS31FL3743A_DS.pdf" H 8550 2200 50
 	1    8550 2200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1500 1050 1550 1050
+Wire Wire Line
+	1500 1150 1550 1150
 $EndSCHEMATC

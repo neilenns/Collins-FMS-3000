@@ -945,10 +945,6 @@ F 3 " ~" H 3075 2250 50  0001 C CNN
 	1    4350 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 2400 2800 2    50   BiDi ~ 0
-SDA
-Text HLabel 2400 2700 2    50   Output ~ 0
-SCK
 Wire Wire Line
 	1900 1200 1950 1200
 $Comp
@@ -957,11 +953,29 @@ U 1 1 618B76D9
 P 1800 3000
 F 0 "U1" H 1900 1250 50  0000 L CNN
 F 1 "ATmega32U4-MU" H 1900 1150 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 1800 750 50  0001 C CIN
+F 2 "Package_QFP:TQFP-44-1EP_10x10mm_P0.8mm_EP4.5x4.5mm" H 1800 750 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 1800 3000 50  0001 C CNN
 	1    1800 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1850 1200 1900 1200
+Wire Wire Line
+	1750 1200 1850 1200
+Connection ~ 1850 1200
+Wire Wire Line
+	2050 1200 1950 1200
+Connection ~ 1950 1200
+Text HLabel 2600 2700 2    50   Output ~ 0
+SCL
+Text HLabel 2600 2800 2    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	2400 2700 2600 2700
+Wire Wire Line
+	2400 2800 2600 2800
+Text Label 2550 2700 2    50   ~ 0
+SCL
+Text Label 2550 2800 2    50   ~ 0
+SDA
 $EndSCHEMATC
