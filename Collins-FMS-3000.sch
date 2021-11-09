@@ -43,10 +43,10 @@ F23 "COL10" I R 4850 2300 50
 F24 "COL11" I R 4850 2400 50 
 $EndSheet
 $Comp
-L Interface_Expansion:MCP23017_SO U1
+L Interface_Expansion:MCP23017_SO U2
 U 1 1 626E613B
 P 3200 2000
-F 0 "U1" H 3250 3050 50  0000 L CNN
+F 0 "U2" H 3250 3050 50  0000 L CNN
 F 1 "MCP23017_SO" H 3250 2950 50  0000 L CNN
 F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 3400 1000 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3400 900 50  0001 L CNN
@@ -105,10 +105,10 @@ F 3 "" H 5600 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_Expansion:MCP23017_SO U2
+L Interface_Expansion:MCP23017_SO U3
 U 1 1 626F440B
 P 5600 2000
-F 0 "U2" H 5650 3050 50  0000 L CNN
+F 0 "U3" H 5650 3050 50  0000 L CNN
 F 1 "MCP23017_SO" H 5650 2950 50  0000 L CNN
 F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 5800 1000 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5800 900 50  0001 L CNN
@@ -366,17 +366,6 @@ Wire Wire Line
 	6400 1200 6650 1200
 Wire Notes Line
 	7100 3500 7100 650 
-$Comp
-L Collins-FMS-3000:IS31FL3743A U3
-U 1 1 619107BE
-P 8550 2200
-F 0 "U3" H 8700 3500 50  0000 C CNN
-F 1 "IS31FL3743A" H 8900 3400 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-40-1EP_5x5mm_P0.4mm_EP3.8x3.8mm_ThermalVias" H 8550 -300 50  0001 C CNN
-F 3 "https://www.lumissil.com/assets/pdf/core/IS31FL3743A_DS.pdf" H 8550 2200 50  0001 C CNN
-	1    8550 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8500 950  8500 900 
 Wire Wire Line
@@ -824,4 +813,15 @@ F24 "CS12" O L 9350 3450 50
 $EndSheet
 Wire Wire Line
 	9350 3450 9050 3450
+$Comp
+L Collins-FMS-3000:IS31FL3743A U4
+U 1 1 619107BE
+P 8550 2200
+F 0 "U4" H 8700 3500 50  0000 C CNN
+F 1 "IS31FL3743A" H 8900 3400 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-40-1EP_5x5mm_P0.4mm_EP3.8x3.8mm_ThermalVias" H 8550 -300 50  0001 C CNN
+F 3 "https://www.lumissil.com/assets/pdf/core/IS31FL3743A_DS.pdf" H 8550 2200 50  0001 C CNN
+	1    8550 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

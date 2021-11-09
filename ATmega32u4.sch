@@ -13,29 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Collins-FMS-3000-rescue:ATmega32U4-MU-Global_MobiFlight_panel_parts U?
-U 1 1 61F97DC3
-P 1800 3000
-AR Path="/61F97DC3" Ref="U?"  Part="1" 
-AR Path="/61F7F1B9/61F97DC3" Ref="U4"  Part="1" 
-F 0 "U4" H 1900 1250 50  0000 L CNN
-F 1 "ATmega32U4-MU" H 1900 1150 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 1800 750 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 1800 3000 50  0001 C CNN
-	1    1800 3000
-	1    0    0    -1  
-$EndComp
 Text GLabel 950  1500 0    50   Input ~ 0
 RESET
-Wire Wire Line
-	1750 1200 1850 1200
-Connection ~ 1850 1200
-Wire Wire Line
-	1850 1200 1900 1200
-Connection ~ 1950 1200
-Wire Wire Line
-	1950 1200 2050 1200
 $Comp
 L power:+5V #PWR?
 U 1 1 61F97DCF
@@ -50,8 +29,6 @@ F 3 "" H 1900 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1900 1200
-Wire Wire Line
-	1900 1200 1950 1200
 $Comp
 L Device:C_Small C?
 U 1 1 61F97DD7
@@ -972,4 +949,19 @@ Text HLabel 2400 2800 2    50   BiDi ~ 0
 SDA
 Text HLabel 2400 2700 2    50   Output ~ 0
 SCK
+Wire Wire Line
+	1900 1200 1950 1200
+$Comp
+L Collins-FMS-3000:ATmega32U4-MU U1
+U 1 1 618B76D9
+P 1800 3000
+F 0 "U1" H 1900 1250 50  0000 L CNN
+F 1 "ATmega32U4-MU" H 1900 1150 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 1800 750 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 1800 3000 50  0001 C CNN
+	1    1800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1200 1900 1200
 $EndSCHEMATC
