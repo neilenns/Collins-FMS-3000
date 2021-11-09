@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Global_MobiFlight_panel_parts:ATmega32U4-MU U?
+L Collins-FMS-3000-rescue:ATmega32U4-MU-Global_MobiFlight_panel_parts U?
 U 1 1 61F97DC3
 P 1800 3000
 AR Path="/61F97DC3" Ref="U?"  Part="1" 
