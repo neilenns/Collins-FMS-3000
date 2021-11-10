@@ -970,11 +970,60 @@ I2C_SCL
 Text HLabel 2600 2800 2    50   BiDi ~ 0
 I2C_SDA
 Wire Wire Line
-	2400 2700 2600 2700
+	2400 2800 2500 2800
 Wire Wire Line
-	2400 2800 2600 2800
-Wire Wire Line
-	2400 2900 2600 2900
+	2400 2900 2550 2900
 Text HLabel 2600 2900 2    50   Output ~ 0
 SDB
+Wire Wire Line
+	2500 2800 2500 2750
+Wire Wire Line
+	2500 2750 3250 2750
+Wire Wire Line
+	3250 2750 3250 2800
+Connection ~ 2500 2800
+Wire Wire Line
+	2500 2800 2600 2800
+Wire Wire Line
+	2400 2700 2450 2700
+Wire Wire Line
+	2450 2700 2450 2650
+Wire Wire Line
+	2450 2650 3250 2650
+Wire Wire Line
+	3250 2650 3250 2700
+Connection ~ 2450 2700
+Wire Wire Line
+	2450 2700 2600 2700
+Wire Wire Line
+	2550 2900 2550 2850
+Wire Wire Line
+	2550 2850 3250 2850
+Wire Wire Line
+	3250 2850 3250 2900
+Connection ~ 2550 2900
+Wire Wire Line
+	2550 2900 2600 2900
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 618E5A1D
+P 3450 2800
+F 0 "J3" H 3400 2500 50  0000 L CNN
+F 1 "Conn_01x04" H 3400 2400 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3450 2800 50  0001 C CNN
+F 3 "~" H 3450 2800 50  0001 C CNN
+	1    3450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 618E6506
+P 3250 3000
+F 0 "#PWR0105" H 3250 2750 50  0001 C CNN
+F 1 "GND" H 3255 2827 50  0000 C CNN
+F 2 "" H 3250 3000 50  0001 C CNN
+F 3 "" H 3250 3000 50  0001 C CNN
+	1    3250 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
