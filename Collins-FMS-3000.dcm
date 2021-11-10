@@ -24,6 +24,12 @@ K AVR 8bit Microcontroller MegaAVR USB
 F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
 $ENDCMP
 #
+$CMP IS31FL3733B
+D 12×16 dots matrix driver with individual auto breathe function
+K led matrix pwm
+F https://www.lumissil.com/assets/pdf/core/IS31FL3733B_DS.pdf
+$ENDCMP
+#
 $CMP IS31FL3743A
 D 18×11 dots matrix LED driver with 8-bit PWM, QFN-40
 K led matrix pwm
