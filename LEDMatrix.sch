@@ -1007,161 +1007,29 @@ Wire Wire Line
 	4250 3550 3950 3550
 Wire Wire Line
 	4250 3750 900  3750
-$Comp
-L Device:R_Small R29
-U 1 1 61B42B61
-P 1150 3950
-F 0 "R29" H 1209 3996 50  0000 L CNN
-F 1 "20" H 1209 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1150 3950 50  0001 C CNN
-F 3 "~" H 1150 3950 50  0001 C CNN
-	1    1150 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R30
-U 1 1 61B44613
-P 1450 3950
-F 0 "R30" H 1509 3996 50  0000 L CNN
-F 1 "20" H 1509 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1450 3950 50  0001 C CNN
-F 3 "~" H 1450 3950 50  0001 C CNN
-	1    1450 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R31
-U 1 1 61B5AC10
-P 1750 3950
-F 0 "R31" H 1809 3996 50  0000 L CNN
-F 1 "20" H 1809 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1750 3950 50  0001 C CNN
-F 3 "~" H 1750 3950 50  0001 C CNN
-	1    1750 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R32
-U 1 1 61B71123
-P 2050 3950
-F 0 "R32" H 2109 3996 50  0000 L CNN
-F 1 "20" H 2109 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2050 3950 50  0001 C CNN
-F 3 "~" H 2050 3950 50  0001 C CNN
-	1    2050 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R33
-U 1 1 61B876BE
-P 2350 3950
-F 0 "R33" H 2409 3996 50  0000 L CNN
-F 1 "20" H 2409 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2350 3950 50  0001 C CNN
-F 3 "~" H 2350 3950 50  0001 C CNN
-	1    2350 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R34
-U 1 1 61B9DC44
-P 2650 3950
-F 0 "R34" H 2709 3996 50  0000 L CNN
-F 1 "20" H 2709 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2650 3950 50  0001 C CNN
-F 3 "~" H 2650 3950 50  0001 C CNN
-	1    2650 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R35
-U 1 1 61BB4181
-P 2950 3950
-F 0 "R35" H 3009 3996 50  0000 L CNN
-F 1 "20" H 3009 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2950 3950 50  0001 C CNN
-F 3 "~" H 2950 3950 50  0001 C CNN
-	1    2950 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R36
-U 1 1 61BCA95E
-P 3250 3950
-F 0 "R36" H 3309 3996 50  0000 L CNN
-F 1 "20" H 3309 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3250 3950 50  0001 C CNN
-F 3 "~" H 3250 3950 50  0001 C CNN
-	1    3250 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R37
-U 1 1 61BE0EEA
-P 3550 3950
-F 0 "R37" H 3609 3996 50  0000 L CNN
-F 1 "20" H 3609 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3550 3950 50  0001 C CNN
-F 3 "~" H 3550 3950 50  0001 C CNN
-	1    3550 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R38
-U 1 1 61BF7436
-P 3850 3950
-F 0 "R38" H 3909 3996 50  0000 L CNN
-F 1 "20" H 3909 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3850 3950 50  0001 C CNN
-F 3 "~" H 3850 3950 50  0001 C CNN
-	1    3850 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R39
-U 1 1 61C0DB47
-P 4150 3950
-F 0 "R39" H 4209 3996 50  0000 L CNN
-F 1 "20" H 4209 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4150 3950 50  0001 C CNN
-F 3 "~" H 4150 3950 50  0001 C CNN
-	1    4150 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R40
-U 1 1 61C24289
-P 4450 3950
-F 0 "R40" H 4509 3996 50  0000 L CNN
-F 1 "20" H 4509 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4450 3950 50  0001 C CNN
-F 3 "~" H 4450 3950 50  0001 C CNN
-	1    4450 3950
-	1    0    0    -1  
-$EndComp
-Text HLabel 1150 4050 3    50   Output ~ 0
+Text HLabel 1150 3850 3    50   Output ~ 0
 CS1
-Text HLabel 1450 4050 3    50   Output ~ 0
+Text HLabel 1450 3850 3    50   Output ~ 0
 CS2
-Text HLabel 1750 4050 3    50   Output ~ 0
+Text HLabel 1750 3850 3    50   Output ~ 0
 CS3
-Text HLabel 2050 4050 3    50   Output ~ 0
+Text HLabel 2050 3850 3    50   Output ~ 0
 CS4
-Text HLabel 2350 4050 3    50   Output ~ 0
+Text HLabel 2350 3850 3    50   Output ~ 0
 CS5
-Text HLabel 2650 4050 3    50   Output ~ 0
+Text HLabel 2650 3850 3    50   Output ~ 0
 CS6
-Text HLabel 2950 4050 3    50   Output ~ 0
+Text HLabel 2950 3850 3    50   Output ~ 0
 CS7
-Text HLabel 3250 4050 3    50   Output ~ 0
+Text HLabel 3250 3850 3    50   Output ~ 0
 CS8
-Text HLabel 3550 4050 3    50   Output ~ 0
+Text HLabel 3550 3850 3    50   Output ~ 0
 CS9
-Text HLabel 3850 4050 3    50   Output ~ 0
+Text HLabel 3850 3850 3    50   Output ~ 0
 CS10
-Text HLabel 4150 4050 3    50   Output ~ 0
+Text HLabel 4150 3850 3    50   Output ~ 0
 CS11
-Text HLabel 4450 4050 3    50   Output ~ 0
+Text HLabel 4450 3850 3    50   Output ~ 0
 CS12
 Text HLabel 900  850  0    50   Input ~ 0
 SW1

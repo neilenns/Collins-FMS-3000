@@ -273,7 +273,6 @@ NoConn ~ 2400 2100
 NoConn ~ 2400 2200
 NoConn ~ 2400 2400
 NoConn ~ 2400 2500
-NoConn ~ 2400 2900
 NoConn ~ 2400 3000
 NoConn ~ 2400 3100
 NoConn ~ 2400 3300
@@ -967,15 +966,15 @@ Wire Wire Line
 	2050 1200 1950 1200
 Connection ~ 1950 1200
 Text HLabel 2600 2700 2    50   Output ~ 0
-SCL
+I2C_SCL
 Text HLabel 2600 2800 2    50   BiDi ~ 0
-SDA
+I2C_SDA
 Wire Wire Line
 	2400 2700 2600 2700
 Wire Wire Line
 	2400 2800 2600 2800
-Text Label 2550 2700 2    50   ~ 0
-SCL
-Text Label 2550 2800 2    50   ~ 0
-SDA
+Wire Wire Line
+	2400 2900 2600 2900
+Text HLabel 2600 2900 2    50   Output ~ 0
+SDB
 $EndSCHEMATC
