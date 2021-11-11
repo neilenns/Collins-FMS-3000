@@ -832,16 +832,49 @@ F 3 "~" H 2200 4450 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	2050 3700 2050 4600
-Wire Notes Line
-	2050 4600 2900 4600
-Wire Notes Line
-	2900 4600 2900 3700
-Wire Notes Line
-	2050 3700 2900 3700
 Text Notes 2050 3650 0    50   ~ 0
 Mounting and fabrication holes
 Wire Wire Line
 	2800 2400 2850 2400
 Wire Wire Line
 	8750 2200 8450 2200
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 618DF41E
+P 3000 3850
+F 0 "H5" H 3100 3896 50  0000 L CNN
+F 1 "MountingHole" H 3100 3805 50  0000 L CNN
+F 2 "Collins-FMS-3000:JLCPCB_Tooling_Hole" H 3000 3850 50  0001 C CNN
+F 3 "~" H 3000 3850 50  0001 C CNN
+	1    3000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 618DF424
+P 3000 4050
+F 0 "H6" H 3100 4096 50  0000 L CNN
+F 1 "MountingHole" H 3100 4005 50  0000 L CNN
+F 2 "Collins-FMS-3000:JLCPCB_Tooling_Hole" H 3000 4050 50  0001 C CNN
+F 3 "~" H 3000 4050 50  0001 C CNN
+	1    3000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 618DF42A
+P 3000 4250
+F 0 "H7" H 3100 4296 50  0000 L CNN
+F 1 "MountingHole" H 3100 4205 50  0000 L CNN
+F 2 "Collins-FMS-3000:JLCPCB_Tooling_Hole" H 3000 4250 50  0001 C CNN
+F 3 "~" H 3000 4250 50  0001 C CNN
+	1    3000 4250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3650 3700 3650 4600
+Wire Notes Line
+	2050 4600 3650 4600
+Wire Notes Line
+	2050 3700 3650 3700
 $EndSCHEMATC
