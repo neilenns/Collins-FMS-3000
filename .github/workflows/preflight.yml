@@ -14,9 +14,6 @@ on:
 
 jobs:
   Preflight:
-    env:
-      # Set this to the base filename of your project.
-      BaseFileName: Collins-FMS-3000
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

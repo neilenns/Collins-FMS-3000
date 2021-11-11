@@ -19,8 +19,6 @@ on:
 jobs:
   FabricationAndDocumentation:
     env:
-      # Set this to the base filename of your project.
-      BaseFileName: Collins-FMS-3000
       # Set this to your local timezone. See https://www.wikiwand.com/en/List_of_tz_database_time_zones for valid strings.
       Timezone: America/Los_Angeles
       # Set this to the output folder for all of the generated files. Unless you have a very
@@ -119,3 +117,12 @@ jobs:
             ${{ env.BaseFileName }}-Documentation.zip
             ${{ env.BaseFileName }}-JLCPCB.zip
             ${{ env.OutputFolder }}/PCBWay/${{ env.BaseFileName }}-PCBWay.zip
+
+      # Archive all the artifacts from output and attach to the action's results.
+      # This is so they're made available when this workflow is run manually from the
+      # GitHub actions page.
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: schematic
+          path: ${{ env.OutputFolder }}/**
