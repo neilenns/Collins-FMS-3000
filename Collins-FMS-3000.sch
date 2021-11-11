@@ -53,9 +53,9 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2300 900 5
 	1    2100 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 1000 1200 0    50   BiDi ~ 0
+Text GLabel 1400 1200 0    50   BiDi ~ 0
 I2C_SDA
-Text GLabel 1000 1300 0    50   Input ~ 0
+Text GLabel 1400 1300 0    50   Input ~ 0
 I2C_SCL
 NoConn ~ 1400 1800
 NoConn ~ 1400 1900
@@ -89,9 +89,9 @@ F 3 "" H 2100 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2100 900 
-Text GLabel 5750 1200 2    50   BiDi ~ 0
+Text GLabel 5200 1200 2    50   BiDi ~ 0
 I2C_SDA
-Text GLabel 5750 1300 2    50   Input ~ 0
+Text GLabel 5200 1300 2    50   Input ~ 0
 I2C_SCL
 $Comp
 L power:+5V #PWR03
@@ -132,7 +132,6 @@ NoConn ~ 5200 1800
 NoConn ~ 5200 1900
 Wire Wire Line
 	5200 2100 5300 2100
-Connection ~ 4500 900 
 NoConn ~ 3800 2500
 NoConn ~ 3800 2600
 NoConn ~ 3800 2700
@@ -247,94 +246,8 @@ $EndComp
 Connection ~ 3300 3250
 Wire Wire Line
 	3300 3250 3100 3250
-$Comp
-L Device:R_Small R1
-U 1 1 618D9439
-P 1100 1050
-F 0 "R1" H 1159 1096 50  0000 L CNN
-F 1 "2k" H 1159 1005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1100 1050 50  0001 C CNN
-F 3 "~" H 1100 1050 50  0001 C CNN
-	1    1100 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 618D97E0
-P 1350 1050
-F 0 "R2" H 1409 1096 50  0000 L CNN
-F 1 "2k" H 1409 1005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1350 1050 50  0001 C CNN
-F 3 "~" H 1350 1050 50  0001 C CNN
-	1    1350 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 1300 1350 1150
-Wire Wire Line
-	1100 1200 1100 1150
-Wire Wire Line
-	1100 1200 1000 1200
-Wire Wire Line
-	1100 950  1100 900 
-Wire Wire Line
-	1100 900  1350 900 
-Wire Wire Line
-	1350 950  1350 900 
-Connection ~ 1350 900 
-Wire Wire Line
-	1350 900  2100 900 
-Wire Wire Line
-	1400 1300 1350 1300
 Wire Wire Line
 	2100 900  2200 900 
-Wire Wire Line
-	1350 1300 1000 1300
-Connection ~ 1350 1300
-Wire Wire Line
-	1100 1200 1400 1200
-Connection ~ 1100 1200
-$Comp
-L Device:R_Small R3
-U 1 1 618ED4A8
-P 5300 1100
-F 0 "R3" H 5359 1146 50  0000 L CNN
-F 1 "2k" H 5359 1055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5300 1100 50  0001 C CNN
-F 3 "~" H 5300 1100 50  0001 C CNN
-	1    5300 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 618EDA4E
-P 5550 1100
-F 0 "R4" H 5609 1146 50  0000 L CNN
-F 1 "2k" H 5609 1055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5550 1100 50  0001 C CNN
-F 3 "~" H 5550 1100 50  0001 C CNN
-	1    5550 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 1300 5300 1300
-Wire Wire Line
-	5300 1300 5300 1200
-Wire Wire Line
-	5300 1000 5300 900 
-Connection ~ 5300 900 
-Wire Wire Line
-	5300 900  4500 900 
-Wire Wire Line
-	5550 900  5550 1000
-Wire Wire Line
-	5300 900  5550 900 
-Wire Wire Line
-	5550 1200 5750 1200
-Connection ~ 5550 1200
-Wire Wire Line
-	5300 1300 5750 1300
-Connection ~ 5300 1300
 $Comp
 L power:+5V #PWR0103
 U 1 1 618FB12F
@@ -685,59 +598,9 @@ F 3 "" H 7200 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7450 3500
-$Comp
-L Device:R_Small R9
-U 1 1 61A0BFB6
-P 7250 2200
-F 0 "R9" H 7309 2246 50  0000 L CNN
-F 1 "2k" H 7309 2155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7250 2200 50  0001 C CNN
-F 3 "~" H 7250 2200 50  0001 C CNN
-	1    7250 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 2350 7250 2350
-$Comp
-L Device:R_Small R8
-U 1 1 61A12756
-P 7050 2200
-F 0 "R8" H 7109 2246 50  0000 L CNN
-F 1 "2k" H 7109 2155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7050 2200 50  0001 C CNN
-F 3 "~" H 7050 2200 50  0001 C CNN
-	1    7050 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 2300 7250 2350
-Wire Wire Line
-	7250 2100 7050 2100
-$Comp
-L power:+5V #PWR012
-U 1 1 61A250CA
-P 7050 2100
-F 0 "#PWR012" H 7050 1950 50  0001 C CNN
-F 1 "+5V" H 7150 2150 50  0000 C CNN
-F 2 "" H 7050 2100 50  0001 C CNN
-F 3 "" H 7050 2100 50  0001 C CNN
-	1    7050 2100
-	1    0    0    -1  
-$EndComp
-Connection ~ 7050 2100
-Wire Wire Line
-	7450 2450 7050 2450
-Wire Wire Line
-	7050 2450 7050 2300
-Wire Wire Line
-	7250 2350 6900 2350
-Connection ~ 7250 2350
-Wire Wire Line
-	7050 2450 6900 2450
-Connection ~ 7050 2450
-Text GLabel 6900 2350 0    50   BiDi ~ 0
+Text GLabel 7450 2350 0    50   BiDi ~ 0
 I2C_SDA
-Text GLabel 6900 2450 0    50   BiDi ~ 0
+Text GLabel 7450 2450 0    50   BiDi ~ 0
 I2C_SCL
 NoConn ~ 7450 2650
 $Comp
@@ -776,41 +639,8 @@ F 3 "" H 7950 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7950 4200
-Wire Wire Line
-	7450 2550 7050 2550
-Text GLabel 6900 2550 0    50   Input ~ 0
+Text GLabel 7450 2550 0    50   Input ~ 0
 SDB
-$Comp
-L Device:R_Small R5
-U 1 1 61A7BE7A
-P 6550 2850
-F 0 "R5" H 6609 2896 50  0000 L CNN
-F 1 "100k" H 6609 2805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6550 2850 50  0001 C CNN
-F 3 "~" H 6550 2850 50  0001 C CNN
-	1    6550 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7050 2550 7050 2650
-Wire Wire Line
-	7050 2650 6550 2650
-Wire Wire Line
-	6550 2650 6550 2750
-Connection ~ 7050 2550
-Wire Wire Line
-	7050 2550 6900 2550
-$Comp
-L power:GND #PWR06
-U 1 1 61A8402C
-P 6550 2950
-F 0 "#PWR06" H 6550 2700 50  0001 C CNN
-F 1 "GND" H 6555 2777 50  0000 C CNN
-F 2 "" H 6550 2950 50  0001 C CNN
-F 3 "" H 6550 2950 50  0001 C CNN
-	1    6550 2950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R6
 U 1 1 61A85271
@@ -930,6 +760,4 @@ Wire Notes Line
 	6200 3500 550  3500
 Wire Notes Line
 	550  650  550  3500
-Wire Wire Line
-	5200 1200 5550 1200
 $EndSCHEMATC
