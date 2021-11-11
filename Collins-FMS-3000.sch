@@ -760,4 +760,58 @@ Wire Notes Line
 	6200 3500 550  3500
 Wire Notes Line
 	550  650  550  3500
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 618CD3BC
+P 2200 3850
+F 0 "H1" H 2300 3896 50  0000 L CNN
+F 1 "MountingHole" H 2300 3805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2200 3850 50  0001 C CNN
+F 3 "~" H 2200 3850 50  0001 C CNN
+	1    2200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 618CE0B8
+P 2200 4050
+F 0 "H2" H 2300 4096 50  0000 L CNN
+F 1 "MountingHole" H 2300 4005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2200 4050 50  0001 C CNN
+F 3 "~" H 2200 4050 50  0001 C CNN
+	1    2200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 618D2A7D
+P 2200 4250
+F 0 "H3" H 2300 4296 50  0000 L CNN
+F 1 "MountingHole" H 2300 4205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2200 4250 50  0001 C CNN
+F 3 "~" H 2200 4250 50  0001 C CNN
+	1    2200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 618D732D
+P 2200 4450
+F 0 "H4" H 2300 4496 50  0000 L CNN
+F 1 "MountingHole" H 2300 4405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2200 4450 50  0001 C CNN
+F 3 "~" H 2200 4450 50  0001 C CNN
+	1    2200 4450
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2050 3700 2050 4600
+Wire Notes Line
+	2050 4600 2900 4600
+Wire Notes Line
+	2900 4600 2900 3700
+Wire Notes Line
+	2050 3700 2900 3700
+Text Notes 2050 3650 0    50   ~ 0
+Mounting and fabrication holes
 $EndSCHEMATC
