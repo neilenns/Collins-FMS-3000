@@ -9,6 +9,12 @@ name: "KiBot - Release"
 on:
   release:
     types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Design version"
+        required: true
+        default: "pre-release"
 
 jobs:
   FabricationAndDocumentation:
@@ -79,8 +85,8 @@ jobs:
         with:
           config: .kibot/release.kibot.yaml
           dir: ${{ env.OutputFolder }}
-          schema: ${{ env.BaseFileName }}.sch
-          board: ${{ env.BaseFileName }}.kicad_pcb
+          schema: "*.sch"
+          board: "*.kicad_pcb"
 
       # Install the zip command line tool to package up the output
       - name: Install zip
