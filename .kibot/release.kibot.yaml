@@ -4,6 +4,8 @@ kibot:
   version: 1
 
 preflight:
+  # These are off by default so it's possible to generate output files prior to the board being
+  # completely finished (e.g. for draft review, etc.).
   run_erc: false
   run_drc: false
   # This is important to set to true so replacement of version and date strings in the release

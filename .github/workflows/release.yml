@@ -124,5 +124,5 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: schematic
+          name: release_files
           path: ${{ env.OutputFolder }}/**
