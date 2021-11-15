@@ -342,6 +342,7 @@ F1 "ATmega32u4.sch" 50
 F2 "I2C_SDA" B R 1500 4100 50 
 F3 "I2C_SCL" O R 1500 4200 50 
 F4 "SDB" O R 1500 4300 50 
+F5 "INTB" I R 1500 4400 50 
 $EndSheet
 Text GLabel 1550 4100 2    50   BiDi ~ 0
 I2C_SDA
@@ -624,7 +625,6 @@ Text GLabel 7450 2350 0    50   BiDi ~ 0
 I2C_SDA
 Text GLabel 7450 2450 0    50   BiDi ~ 0
 I2C_SCL
-NoConn ~ 7450 2650
 $Comp
 L Device:R_Small R7
 U 1 1 61A484F6
@@ -877,4 +877,37 @@ Wire Notes Line
 	2050 4600 3650 4600
 Wire Notes Line
 	2050 3700 3650 3700
+Text GLabel 6650 2650 0    50   Output ~ 0
+INTB
+Wire Wire Line
+	7450 2650 6850 2650
+$Comp
+L Device:R_Small R4
+U 1 1 61926829
+P 6850 2550
+F 0 "R4" H 6909 2596 50  0000 L CNN
+F 1 "100k" H 6909 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6850 2550 50  0001 C CNN
+F 3 "~" H 6850 2550 50  0001 C CNN
+	1    6850 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 2650
+Wire Wire Line
+	6850 2650 6650 2650
+$Comp
+L power:+5V #PWR017
+U 1 1 61927283
+P 6850 2450
+F 0 "#PWR017" H 6850 2300 50  0001 C CNN
+F 1 "+5V" H 6865 2623 50  0000 C CNN
+F 2 "" H 6850 2450 50  0001 C CNN
+F 3 "" H 6850 2450 50  0001 C CNN
+	1    6850 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 4400 2    50   Input ~ 0
+INTB
+Wire Wire Line
+	1550 4400 1500 4400
 $EndSCHEMATC

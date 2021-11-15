@@ -288,11 +288,9 @@ NoConn ~ 2400 2100
 NoConn ~ 2400 2200
 NoConn ~ 2400 2400
 NoConn ~ 2400 2500
-NoConn ~ 2400 3000
 NoConn ~ 2400 3100
 NoConn ~ 2400 3300
 NoConn ~ 2400 3400
-NoConn ~ 2400 3700
 NoConn ~ 2400 3900
 NoConn ~ 2400 4000
 NoConn ~ 2400 4100
@@ -1158,4 +1156,7 @@ F 5 "C25741" H 3100 3050 50  0001 C CNN "LCSC"
 $EndComp
 Wire Wire Line
 	3100 2950 3100 2900
+Text HLabel 2400 3700 2    50   Input ~ 0
+INTB
+NoConn ~ 2400 3000
 $EndSCHEMATC
