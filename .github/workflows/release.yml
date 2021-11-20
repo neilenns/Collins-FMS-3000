@@ -85,8 +85,8 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@v1
         with:
           include: ".*.kicad_pcb"
-          find: "(date %%date%%)"
-          replace: '(date "${{ steps.date.outputs.date }}")'
+          find: "date %%date%%"
+          replace: 'date "${{ steps.date.outputs.date }}"'
 
       - name: Set PCB date on PCB layers
         uses: jacobtomlinson/gha-find-replace@v1
