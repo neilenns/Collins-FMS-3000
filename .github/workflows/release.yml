@@ -49,10 +49,6 @@ jobs:
         run: echo "version=${{ github.event.inputs.version }}" >> $GITHUB_ENV
         if: startsWith(github.ref, 'refs/tags/') == false
 
-      - name: Output version used
-        id: output_version
-        run: echo ${{ env.version }}
-
       # Get the current date and time, in the timezone specified above, for use later.
       - name: Get current date and time
         id: date
@@ -103,6 +99,7 @@ jobs:
       # in the .kibot/release.kibot.yaml folder.
       - name: Generate documentation and fabrication files
         uses: INTI-CMNB/KiBot@test_import
+        continue-on-error: true
         with:
           config: .kibot/release.kibot.yaml
           dir: ${{ env.OutputFolder }}
@@ -148,4 +145,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: release_files
-          path: ${{ env.OutputFolder }}/**
+          path: |
+            ${{ env.OutputFolder }}/**
+            ${{ github.event.repository.name }}.kicad_pcb
