@@ -99,7 +99,6 @@ jobs:
       # in the .kibot/release.kibot.yaml folder.
       - name: Generate documentation and fabrication files
         uses: INTI-CMNB/KiBot@test_import
-        continue-on-error: true
         with:
           config: .kibot/release.kibot.yaml
           dir: ${{ env.OutputFolder }}
@@ -120,7 +119,6 @@ jobs:
       # BOM, and position files for SMT fabrication.
       - name: Zip JLCPCB fabrication files
         run: zip -qq -r "../../${{ github.event.repository.name }}-JLCPCB.zip" ${{ github.event.repository.name }}-JLCPCB.zip ${{ github.event.repository.name }}_bom_jlc.csv ${{ github.event.repository.name }}_cpl_jlc.csv
-        continue-on-error: true
         working-directory: ${{ env.OutputFolder }}/JLCPCB
 
       # Upload all the zip files to the release. Note that the PCBWay zip was automatically created by KiBot
@@ -146,6 +144,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: release_files
-          path: |
-            ${{ env.OutputFolder }}/**
-            ${{ github.event.repository.name }}.kicad_pcb
+          path: ${{ env.OutputFolder }}/**
