@@ -39,14 +39,14 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
       - name: Store GitHub release version
         id: save_github_version
-        run: echo "version=" + ${{ steps.get_version.outputs.version }} >> $GITHUB_ENV
+        run: echo "version=${{ steps.get_version.outputs.version }}" >> $GITHUB_ENV
         if: startsWith(github.ref, 'refs/tags/')
 
       # Get the version from the workflow input. This is only valid
       # when run manually as a workflow.
       - name: Store workflow version
         id: save_workflow_version
-        run: echo "version=" + ${{ github.event.inputs.version }} >> $GITHUB_ENV
+        run: echo "version=${{ github.event.inputs.version }}" >> $GITHUB_ENV
         if: startsWith(github.ref, 'refs/tags/') == false
 
       - name: Output version used
