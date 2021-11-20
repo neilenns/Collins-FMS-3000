@@ -120,6 +120,7 @@ jobs:
       # BOM, and position files for SMT fabrication.
       - name: Zip JLCPCB fabrication files
         run: zip -qq -r "../../${{ github.event.repository.name }}-JLCPCB.zip" ${{ github.event.repository.name }}-JLCPCB.zip ${{ github.event.repository.name }}_bom_jlc.csv ${{ github.event.repository.name }}_cpl_jlc.csv
+        continue-on-error: true
         working-directory: ${{ env.OutputFolder }}/JLCPCB
 
       # Upload all the zip files to the release. Note that the PCBWay zip was automatically created by KiBot
