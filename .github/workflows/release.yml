@@ -46,7 +46,7 @@ jobs:
       # when run manually as a workflow.
       - name: Store workflow version
         id: save_github_version
-        run: echo ("version=" + ${{ github.event.inputs.version }}) >> $GITHUB_ENV
+        run: echo "version=hello" >> $GITHUB_ENV
         if: !startsWith(github.ref , 'refs/tags/')
 
       # Get the current date and time, in the timezone specified above, for use later.
