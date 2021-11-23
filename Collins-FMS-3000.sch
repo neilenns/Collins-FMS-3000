@@ -58,7 +58,6 @@ Text GLabel 1550 1200 0    50   BiDi ~ 0
 I2C_SDA
 Text GLabel 1550 1300 0    50   Input ~ 0
 I2C_SCL
-NoConn ~ 1550 1800
 $Comp
 L power:GND #PWR02
 U 1 1 626E7004
@@ -319,6 +318,7 @@ F3 "I2C_SCL" O R 1500 4050 50
 F4 "SDB" O R 1500 4150 50 
 F5 "LED_INTB" I R 1500 4250 50 
 F6 "ROW_INTA" I R 1500 4350 50 
+F7 "ROW_INTB" I R 1500 4450 50 
 $EndSheet
 Text GLabel 1550 3950 2    50   BiDi ~ 0
 I2C_SDA
@@ -796,7 +796,7 @@ Text GLabel 1550 4250 2    50   Input ~ 0
 LED_INTB
 Wire Wire Line
 	1550 4250 1500 4250
-Text GLabel 1050 1900 0    50   Output ~ 0
+Text GLabel 1400 1900 0    50   Output ~ 0
 ROW_INTA
 $Comp
 L power:+5V #PWR011
@@ -879,7 +879,70 @@ NoConn ~ 4150 2600
 NoConn ~ 4150 2700
 NoConn ~ 4150 2800
 Wire Wire Line
-	1050 1900 1550 1900
-Wire Wire Line
 	6750 2650 7450 2650
+Wire Wire Line
+	1400 1900 1550 1900
+Wire Wire Line
+	1550 1800 1400 1800
+Text GLabel 1400 1800 0    50   Output ~ 0
+ROW_INTB
+$Comp
+L power:+5V #PWR017
+U 1 1 61A03F2C
+P 4150 4000
+F 0 "#PWR017" H 4150 3850 50  0001 C CNN
+F 1 "+5V" H 4165 4173 50  0000 C CNN
+F 2 "" H 4150 4000 50  0001 C CNN
+F 3 "" H 4150 4000 50  0001 C CNN
+	1    4150 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 4100 0    50   Output ~ 0
+I2C_SDA
+Text GLabel 4150 4200 0    50   Output ~ 0
+I2C_SCL
+Text GLabel 4150 4300 0    50   Output ~ 0
+SDB
+Text GLabel 4650 4000 2    50   Output ~ 0
+LED_INTB
+Text GLabel 4650 4200 2    50   Output ~ 0
+ROW_INTA
+Text GLabel 4650 4100 2    50   Output ~ 0
+ROW_INTB
+$Comp
+L power:GND #PWR019
+U 1 1 61A0D193
+P 4650 4300
+F 0 "#PWR019" H 4650 4050 50  0001 C CNN
+F 1 "GND" H 4655 4127 50  0000 C CNN
+F 2 "" H 4650 4300 50  0001 C CNN
+F 3 "" H 4650 4300 50  0001 C CNN
+	1    4650 4300
+	1    0    0    -1  
+$EndComp
+Text Notes 3700 3650 0    50   ~ 0
+Debugging connections
+Wire Wire Line
+	1500 4450 1550 4450
+Text GLabel 1550 4450 2    50   Input ~ 0
+ROW_INTB
+Wire Notes Line
+	3700 3700 3700 4600
+Wire Notes Line
+	3700 4600 5150 4600
+Wire Notes Line
+	5150 4600 5150 3700
+Wire Notes Line
+	3700 3700 5150 3700
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J3
+U 1 1 61A8D1FB
+P 4350 4100
+F 0 "J3" H 4400 4325 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 4400 4326 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4350 4100 50  0001 C CNN
+F 3 "~" H 4350 4100 50  0001 C CNN
+	1    4350 4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
