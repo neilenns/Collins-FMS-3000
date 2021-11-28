@@ -584,15 +584,14 @@ $EndComp
 $Comp
 L power:GND #PWR016
 U 1 1 61A720C8
-P 7950 4200
-F 0 "#PWR016" H 7950 3950 50  0001 C CNN
-F 1 "GND" H 7955 4027 50  0000 C CNN
-F 2 "" H 7950 4200 50  0001 C CNN
-F 3 "" H 7950 4200 50  0001 C CNN
-	1    7950 4200
+P 8000 4200
+F 0 "#PWR016" H 8000 3950 50  0001 C CNN
+F 1 "GND" H 8005 4027 50  0000 C CNN
+F 2 "" H 8000 4200 50  0001 C CNN
+F 3 "" H 8000 4200 50  0001 C CNN
+	1    8000 4200
 	1    0    0    -1  
 $EndComp
-Connection ~ 7950 4200
 Text GLabel 7450 2550 0    50   Input ~ 0
 SDB
 $Comp
@@ -610,17 +609,6 @@ F 5 "C25792" H 6700 3700 50  0001 C CNN "LCSC"
 $EndComp
 Wire Wire Line
 	6700 3600 7450 3600
-$Comp
-L power:GND #PWR015
-U 1 1 61A9E1C7
-P 7450 3800
-F 0 "#PWR015" H 7450 3550 50  0001 C CNN
-F 1 "GND" H 7455 3627 50  0000 C CNN
-F 2 "" H 7450 3800 50  0001 C CNN
-F 3 "" H 7450 3800 50  0001 C CNN
-	1    7450 3800
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 61A9E3B6
@@ -671,28 +659,7 @@ Wire Notes Line
 	550  4700 2000 4700
 Wire Notes Line
 	550  3700 2000 3700
-Wire Wire Line
-	7800 4200 7900 4200
-Wire Wire Line
-	7950 4200 8000 4200
-$Comp
-L Collins-FMS-3000:IS31FL3733B U4
-U 1 1 61B33736
-P 7950 2150
-F 0 "U4" H 7950 3465 50  0000 C CNN
-F 1 "IS31FL3733B" H 7950 3374 50  0000 C CNN
-F 2 "Package_QFP:TQFP-48-1EP_7x7mm_P0.5mm_EP5x5mm_ThermalVias" H 7950 -350 50  0001 C CNN
-F 3 "https://www.lumissil.com/assets/pdf/core/IS31FL3733B_DS.pdf" H 7950 2150 50  0001 C CNN
-	1    7950 2150
-	1    0    0    -1  
-$EndComp
 Connection ~ 7450 1750
-Wire Wire Line
-	7900 4200 7950 4200
-Connection ~ 7900 4200
-Wire Wire Line
-	8000 4200 8100 4200
-Connection ~ 8000 4200
 Wire Notes Line
 	550  650  6200 650 
 Wire Notes Line
@@ -809,9 +776,6 @@ F 3 "" H 1500 1700 50  0001 C CNN
 	1    1500 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7450 3700 7450 3800
-Connection ~ 7450 3800
 Text Notes 7700 4200 2    50   ~ 0
 I2C address: 0x50
 Text GLabel 1550 4350 2    50   Input ~ 0
@@ -943,6 +907,42 @@ F 1 "Conn_02x04_Odd_Even" H 4400 4326 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4350 4100 50  0001 C CNN
 F 3 "~" H 4350 4100 50  0001 C CNN
 	1    4350 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 4200
+Connection ~ 7900 4200
+Wire Wire Line
+	8000 4200 8100 4200
+Wire Wire Line
+	7800 4200 7900 4200
+$Comp
+L Collins-FMS-3000:IS31FL3733B U4
+U 1 1 61B33736
+P 7950 2150
+F 0 "U4" H 7950 3465 50  0000 C CNN
+F 1 "IS31FL3733B" H 7950 3374 50  0000 C CNN
+F 2 "Package_QFP:TQFP-48-1EP_7x7mm_P0.5mm_EP5x5mm_ThermalVias" H 7950 -350 50  0001 C CNN
+F 3 "https://www.lumissil.com/assets/pdf/core/IS31FL3733B_DS.pdf" H 7950 2150 50  0001 C CNN
+	1    7950 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 4200 8100 4200
+Connection ~ 8100 4200
+Wire Wire Line
+	7900 4200 8000 4200
+Connection ~ 7450 3800
+Wire Wire Line
+	7450 3700 7450 3800
+$Comp
+L power:GND #PWR015
+U 1 1 61A9E1C7
+P 7450 3800
+F 0 "#PWR015" H 7450 3550 50  0001 C CNN
+F 1 "GND" H 7455 3627 50  0000 C CNN
+F 2 "" H 7450 3800 50  0001 C CNN
+F 3 "" H 7450 3800 50  0001 C CNN
+	1    7450 3800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
