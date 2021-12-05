@@ -712,8 +712,6 @@ F 3 "~" H 2200 4450 50  0001 C CNN
 	1    2200 4450
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	2050 3700 2050 4600
 Text Notes 2050 3650 0    50   ~ 0
 Mounting and fabrication holes
 Wire Wire Line
@@ -721,43 +719,39 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 618DF41E
-P 3000 3850
-F 0 "H5" H 3100 3896 50  0000 L CNN
-F 1 "MountingHole" H 3100 3805 50  0000 L CNN
-F 2 "Collins-FMS-3000:JLCPCB_Tooling_Hole" H 3000 3850 50  0001 C CNN
-F 3 "~" H 3000 3850 50  0001 C CNN
-	1    3000 3850
+P 2200 4650
+F 0 "H5" H 2300 4696 50  0000 L CNN
+F 1 "MountingHole" H 2300 4605 50  0000 L CNN
+F 2 "Collins-FMS-3000:JLCPCB_Tooling_Hole" H 2200 4650 50  0001 C CNN
+F 3 "~" H 2200 4650 50  0001 C CNN
+	1    2200 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 618DF424
-P 3000 4050
-F 0 "H6" H 3100 4096 50  0000 L CNN
-F 1 "MountingHole" H 3100 4005 50  0000 L CNN
-F 2 "Collins-FMS-3000:JLCPCB_Tooling_Hole" H 3000 4050 50  0001 C CNN
-F 3 "~" H 3000 4050 50  0001 C CNN
-	1    3000 4050
+P 2200 4850
+F 0 "H6" H 2300 4896 50  0000 L CNN
+F 1 "MountingHole" H 2300 4805 50  0000 L CNN
+F 2 "Collins-FMS-3000:JLCPCB_Tooling_Hole" H 2200 4850 50  0001 C CNN
+F 3 "~" H 2200 4850 50  0001 C CNN
+	1    2200 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H7
 U 1 1 618DF42A
-P 3000 4250
-F 0 "H7" H 3100 4296 50  0000 L CNN
-F 1 "MountingHole" H 3100 4205 50  0000 L CNN
-F 2 "Collins-FMS-3000:JLCPCB_Tooling_Hole" H 3000 4250 50  0001 C CNN
-F 3 "~" H 3000 4250 50  0001 C CNN
-	1    3000 4250
+P 2200 5050
+F 0 "H7" H 2300 5096 50  0000 L CNN
+F 1 "MountingHole" H 2300 5005 50  0000 L CNN
+F 2 "Collins-FMS-3000:JLCPCB_Tooling_Hole" H 2200 5050 50  0001 C CNN
+F 3 "~" H 2200 5050 50  0001 C CNN
+	1    2200 5050
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	3650 3700 3650 4600
-Wire Notes Line
-	2050 4600 3650 4600
-Wire Notes Line
 	2050 3700 3650 3700
-Text GLabel 6750 2650 0    50   Output ~ 0
+Text GLabel 7450 2650 0    50   Output ~ 0
 LED_INTB
 Text GLabel 1550 4250 2    50   Input ~ 0
 LED_INTB
@@ -842,8 +836,6 @@ NoConn ~ 4150 2500
 NoConn ~ 4150 2600
 NoConn ~ 4150 2700
 NoConn ~ 4150 2800
-Wire Wire Line
-	6750 2650 7450 2650
 Wire Wire Line
 	1400 1900 1550 1900
 Wire Wire Line
@@ -945,4 +937,98 @@ F 3 "" H 7450 3800 50  0001 C CNN
 	1    7450 3800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 61AD38B3
+P 2950 3850
+F 0 "H8" H 3050 3896 50  0000 L CNN
+F 1 "MountingHole" H 3050 3805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 3850 50  0001 C CNN
+F 3 "~" H 2950 3850 50  0001 C CNN
+	1    2950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 61AD8E9A
+P 2950 4250
+F 0 "H10" H 3050 4296 50  0000 L CNN
+F 1 "MountingHole" H 3050 4205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 4250 50  0001 C CNN
+F 3 "~" H 2950 4250 50  0001 C CNN
+	1    2950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H12
+U 1 1 61ADE53B
+P 2950 4650
+F 0 "H12" H 3050 4696 50  0000 L CNN
+F 1 "MountingHole" H 3050 4605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 4650 50  0001 C CNN
+F 3 "~" H 2950 4650 50  0001 C CNN
+	1    2950 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 61AE9DE8
+P 2950 4050
+F 0 "H9" H 3050 4096 50  0000 L CNN
+F 1 "MountingHole" H 3050 4005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 4050 50  0001 C CNN
+F 3 "~" H 2950 4050 50  0001 C CNN
+	1    2950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 61AE9DEE
+P 2950 4450
+F 0 "H11" H 3050 4496 50  0000 L CNN
+F 1 "MountingHole" H 3050 4405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 4450 50  0001 C CNN
+F 3 "~" H 2950 4450 50  0001 C CNN
+	1    2950 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H13
+U 1 1 61AE9DF4
+P 2950 4850
+F 0 "H13" H 3050 4896 50  0000 L CNN
+F 1 "MountingHole" H 3050 4805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 4850 50  0001 C CNN
+F 3 "~" H 2950 4850 50  0001 C CNN
+	1    2950 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H14
+U 1 1 61AEFD2F
+P 2950 5050
+F 0 "H14" H 3050 5096 50  0000 L CNN
+F 1 "MountingHole" H 3050 5005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 5050 50  0001 C CNN
+F 3 "~" H 2950 5050 50  0001 C CNN
+	1    2950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H15
+U 1 1 61AEFD35
+P 2950 5250
+F 0 "H15" H 3050 5296 50  0000 L CNN
+F 1 "MountingHole" H 3050 5205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 5250 50  0001 C CNN
+F 3 "~" H 2950 5250 50  0001 C CNN
+	1    2950 5250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2050 5400 3650 5400
+Wire Notes Line
+	2050 3700 2050 5400
+Wire Notes Line
+	3650 3700 3650 5400
 $EndSCHEMATC
