@@ -1003,28 +1003,6 @@ F 3 "~" H 2950 4850 50  0001 C CNN
 	1    2950 4850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H14
-U 1 1 61AEFD2F
-P 2950 5050
-F 0 "H14" H 3050 5096 50  0000 L CNN
-F 1 "MountingHole" H 3050 5005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 5050 50  0001 C CNN
-F 3 "~" H 2950 5050 50  0001 C CNN
-	1    2950 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H15
-U 1 1 61AEFD35
-P 2950 5250
-F 0 "H15" H 3050 5296 50  0000 L CNN
-F 1 "MountingHole" H 3050 5205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2950 5250 50  0001 C CNN
-F 3 "~" H 2950 5250 50  0001 C CNN
-	1    2950 5250
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	2050 5400 3650 5400
 Wire Notes Line
