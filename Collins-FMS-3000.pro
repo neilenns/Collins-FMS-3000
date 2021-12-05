@@ -1,4 +1,4 @@
-update=12/1/2021 5:57:46 AM
+update=12/5/2021 9:14:12 AM
 version=1
 last_client=kicad
 [general]
@@ -261,7 +261,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=SW traces
 Clearance=0.2
-TrackWidth=0.381
+TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
