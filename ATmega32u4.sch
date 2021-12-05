@@ -1065,14 +1065,11 @@ Wire Wire Line
 	3200 3100 3150 3100
 Connection ~ 3150 3100
 Wire Wire Line
-	2400 3000 3200 3000
-Text HLabel 3200 3000 2    50   Input ~ 0
-ROW_INTB
-Wire Wire Line
 	4750 2900 5150 2900
 Wire Wire Line
 	5150 2600 5150 2900
 Connection ~ 5150 2900
 Wire Wire Line
 	5150 2900 5400 2900
+NoConn ~ 2400 3000
 $EndSCHEMATC

@@ -43,17 +43,6 @@ F23 "COL10" I R 4000 2300 50
 F24 "COL11" I R 4000 2400 50 
 F25 "ROW11" O L 3100 2400 50 
 $EndSheet
-$Comp
-L Interface_Expansion:MCP23017_SO U2
-U 1 1 626E613B
-P 2250 2000
-F 0 "U2" H 2300 3050 50  0000 L CNN
-F 1 "MCP23017_SO" H 2300 2950 50  0000 L CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 2450 1000 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2450 900 50  0001 L CNN
-	1    2250 2000
-	1    0    0    -1  
-$EndComp
 Text GLabel 1550 1200 0    50   BiDi ~ 0
 I2C_SDA
 Text GLabel 1550 1300 0    50   Input ~ 0
@@ -69,11 +58,6 @@ F 3 "" H 2250 3100 50  0001 C CNN
 	1    2250 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1550 2600 1550 2700
-Connection ~ 1550 2700
-Wire Wire Line
-	1550 2700 1550 2800
 Text Notes 2250 3200 2    50   ~ 0
 I2C address: 0x20
 $Comp
@@ -130,12 +114,8 @@ NoConn ~ 5550 1800
 NoConn ~ 5550 1900
 Wire Wire Line
 	5550 2100 5650 2100
-Connection ~ 1550 2800
 Wire Wire Line
 	2250 3100 1550 3100
-Wire Wire Line
-	1550 2800 1550 3100
-Connection ~ 2250 3100
 Text Notes 550  600  0    50   ~ 0
 Button matrix
 Wire Wire Line
@@ -318,7 +298,6 @@ F3 "I2C_SCL" O R 1500 4050 50
 F4 "SDB" O R 1500 4150 50 
 F5 "LED_INTB" I R 1500 4250 50 
 F6 "ROW_INTA" I R 1500 4350 50 
-F7 "ROW_INTB" I R 1500 4450 50 
 $EndSheet
 Text GLabel 1550 3950 2    50   BiDi ~ 0
 I2C_SDA
@@ -838,10 +817,6 @@ NoConn ~ 4150 2700
 NoConn ~ 4150 2800
 Wire Wire Line
 	1400 1900 1550 1900
-Wire Wire Line
-	1550 1800 1400 1800
-Text GLabel 1400 1800 0    50   Output ~ 0
-ROW_INTB
 $Comp
 L power:+5V #PWR017
 U 1 1 61A03F2C
@@ -861,10 +836,8 @@ Text GLabel 4150 4300 0    50   Output ~ 0
 SDB
 Text GLabel 4650 4000 2    50   Output ~ 0
 LED_INTB
-Text GLabel 4650 4200 2    50   Output ~ 0
-ROW_INTA
 Text GLabel 4650 4100 2    50   Output ~ 0
-ROW_INTB
+ROW_INTA
 $Comp
 L power:GND #PWR019
 U 1 1 61A0D193
@@ -878,10 +851,6 @@ F 3 "" H 4650 4300 50  0001 C CNN
 $EndComp
 Text Notes 3700 3650 0    50   ~ 0
 Debugging connections
-Wire Wire Line
-	1500 4450 1550 4450
-Text GLabel 1550 4450 2    50   Input ~ 0
-ROW_INTB
 Wire Notes Line
 	3700 3700 3700 4600
 Wire Notes Line
@@ -890,17 +859,6 @@ Wire Notes Line
 	5150 4600 5150 3700
 Wire Notes Line
 	3700 3700 5150 3700
-$Comp
-L Connector_Generic:Conn_02x04_Odd_Even J3
-U 1 1 61A8D1FB
-P 4350 4100
-F 0 "J3" H 4400 4325 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 4400 4326 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4350 4100 50  0001 C CNN
-F 3 "~" H 4350 4100 50  0001 C CNN
-	1    4350 4100
-	1    0    0    -1  
-$EndComp
 Connection ~ 8000 4200
 Connection ~ 7900 4200
 Wire Wire Line
@@ -1009,4 +967,37 @@ Wire Notes Line
 	2050 3700 2050 5400
 Wire Notes Line
 	3650 3700 3650 5400
+Wire Wire Line
+	1550 2600 1550 2700
+Connection ~ 1550 2700
+Wire Wire Line
+	1550 2800 1550 3100
+Wire Wire Line
+	1550 2700 1550 2800
+Connection ~ 1550 2800
+Connection ~ 2250 3100
+$Comp
+L Interface_Expansion:MCP23017_SO U2
+U 1 1 626E613B
+P 2250 2000
+F 0 "U2" H 2300 3050 50  0000 L CNN
+F 1 "MCP23017_SO" H 2300 2950 50  0000 L CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 2450 1000 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2450 900 50  0001 L CNN
+	1    2250 2000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 1800
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J3
+U 1 1 61A8D1FB
+P 4350 4100
+F 0 "J3" H 4400 4325 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 4400 4326 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4350 4100 50  0001 C CNN
+F 3 "~" H 4350 4100 50  0001 C CNN
+	1    4350 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4650 4200
 $EndSCHEMATC
