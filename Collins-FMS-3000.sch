@@ -780,48 +780,8 @@ NoConn ~ 4150 2800
 NoConn ~ 4150 2900
 Wire Wire Line
 	1400 2000 1550 2000
-$Comp
-L power:+5V #PWR017
-U 1 1 61A03F2C
-P 4150 4100
-F 0 "#PWR017" H 4150 3950 50  0001 C CNN
-F 1 "+5V" H 4165 4273 50  0000 C CNN
-F 2 "" H 4150 4100 50  0001 C CNN
-F 3 "" H 4150 4100 50  0001 C CNN
-	1    4150 4100
-	1    0    0    -1  
-$EndComp
-Text GLabel 4150 4200 0    50   Output ~ 0
-I2C_SDA
-Text GLabel 4150 4300 0    50   Output ~ 0
-I2C_SCL
-Text GLabel 4150 4400 0    50   Output ~ 0
-SDB
-Text GLabel 4650 4100 2    50   Output ~ 0
-LED_INTB
-Text GLabel 4650 4200 2    50   Output ~ 0
-ROW_INTA
-$Comp
-L power:GND #PWR019
-U 1 1 61A0D193
-P 4650 4400
-F 0 "#PWR019" H 4650 4150 50  0001 C CNN
-F 1 "GND" H 4655 4227 50  0000 C CNN
-F 2 "" H 4650 4400 50  0001 C CNN
-F 3 "" H 4650 4400 50  0001 C CNN
-	1    4650 4400
-	1    0    0    -1  
-$EndComp
 Text Notes 3700 3750 0    50   ~ 0
 Debugging connections
-Wire Notes Line
-	3700 3800 3700 4700
-Wire Notes Line
-	3700 4700 5150 4700
-Wire Notes Line
-	5150 4700 5150 3800
-Wire Notes Line
-	3700 3800 5150 3800
 Connection ~ 8000 4200
 Connection ~ 7900 4200
 Wire Wire Line
@@ -951,18 +911,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2450 1000 
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1550 1900
-$Comp
-L Connector_Generic:Conn_02x04_Odd_Even J3
-U 1 1 61A8D1FB
-P 4350 4200
-F 0 "J3" H 4400 4425 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 4400 4426 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4350 4200 50  0001 C CNN
-F 3 "~" H 4350 4200 50  0001 C CNN
-	1    4350 4200
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4650 4300
 Wire Wire Line
 	3000 3150 3550 3150
 Wire Wire Line
@@ -1034,4 +982,99 @@ Wire Notes Line
 	6200 650  6200 3600
 Wire Notes Line
 	550  650  550  3600
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61B14C75
+P 4300 3950
+F 0 "TP1" V 4350 4300 50  0000 C CNN
+F 1 "TestPoint" V 4250 4300 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 3950 50  0001 C CNN
+F 3 "~" H 4500 3950 50  0001 C CNN
+	1    4300 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61B1596B
+P 4300 4150
+F 0 "TP2" V 4350 4500 50  0000 C CNN
+F 1 "TestPoint" V 4250 4500 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4150 50  0001 C CNN
+F 3 "~" H 4500 4150 50  0001 C CNN
+	1    4300 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61B1B6E1
+P 4300 4350
+F 0 "TP3" V 4350 4700 50  0000 C CNN
+F 1 "TestPoint" V 4250 4700 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4350 50  0001 C CNN
+F 3 "~" H 4500 4350 50  0001 C CNN
+	1    4300 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 61B212DD
+P 4300 4550
+F 0 "TP4" V 4350 4900 50  0000 C CNN
+F 1 "TestPoint" V 4250 4900 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4550 50  0001 C CNN
+F 3 "~" H 4500 4550 50  0001 C CNN
+	1    4300 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 61B26F43
+P 4300 4750
+F 0 "TP5" V 4350 5100 50  0000 C CNN
+F 1 "TestPoint" V 4250 5100 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4750 50  0001 C CNN
+F 3 "~" H 4500 4750 50  0001 C CNN
+	1    4300 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 61B2CC17
+P 4300 4950
+F 0 "TP6" V 4350 5300 50  0000 C CNN
+F 1 "TestPoint" V 4250 5300 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4950 50  0001 C CNN
+F 3 "~" H 4500 4950 50  0001 C CNN
+	1    4300 4950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4300 3950 2    50   Output ~ 0
+I2C_SDA
+Text GLabel 4300 4150 2    50   Output ~ 0
+I2C_SCL
+Text GLabel 4300 4350 2    50   Output ~ 0
+SDB
+Text GLabel 4300 4550 2    50   Output ~ 0
+LED_INTB
+Text GLabel 4300 4750 2    50   Output ~ 0
+ROW_INTA
+$Comp
+L power:GND #PWR017
+U 1 1 61B3499F
+P 4300 4950
+F 0 "#PWR017" H 4300 4700 50  0001 C CNN
+F 1 "GND" H 4305 4777 50  0000 C CNN
+F 2 "" H 4300 4950 50  0001 C CNN
+F 3 "" H 4300 4950 50  0001 C CNN
+	1    4300 4950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3700 3800 4750 3800
+Wire Notes Line
+	4750 3800 4750 5200
+Wire Notes Line
+	4750 5200 3700 5200
+Wire Notes Line
+	3700 3800 3700 5200
 $EndSCHEMATC
