@@ -817,48 +817,8 @@ NoConn ~ 4150 2700
 NoConn ~ 4150 2800
 Wire Wire Line
 	1400 1900 1550 1900
-$Comp
-L power:+5V #PWR017
-U 1 1 61A03F2C
-P 4150 4000
-F 0 "#PWR017" H 4150 3850 50  0001 C CNN
-F 1 "+5V" H 4165 4173 50  0000 C CNN
-F 2 "" H 4150 4000 50  0001 C CNN
-F 3 "" H 4150 4000 50  0001 C CNN
-	1    4150 4000
-	1    0    0    -1  
-$EndComp
-Text GLabel 4150 4100 0    50   Output ~ 0
-I2C_SDA
-Text GLabel 4150 4200 0    50   Output ~ 0
-I2C_SCL
-Text GLabel 4150 4300 0    50   Output ~ 0
-SDB
-Text GLabel 4650 4000 2    50   Output ~ 0
-LED_INTB
-Text GLabel 4650 4100 2    50   Output ~ 0
-ROW_INTA
-$Comp
-L power:GND #PWR019
-U 1 1 61A0D193
-P 4650 4300
-F 0 "#PWR019" H 4650 4050 50  0001 C CNN
-F 1 "GND" H 4655 4127 50  0000 C CNN
-F 2 "" H 4650 4300 50  0001 C CNN
-F 3 "" H 4650 4300 50  0001 C CNN
-	1    4650 4300
-	1    0    0    -1  
-$EndComp
 Text Notes 3700 3650 0    50   ~ 0
 Debugging connections
-Wire Notes Line
-	3700 3700 3700 4600
-Wire Notes Line
-	3700 4600 5150 4600
-Wire Notes Line
-	5150 4600 5150 3700
-Wire Notes Line
-	3700 3700 5150 3700
 Connection ~ 8000 4200
 Connection ~ 7900 4200
 Wire Wire Line
@@ -989,15 +949,98 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2450 900 5
 $EndComp
 NoConn ~ 1550 1800
 $Comp
-L Connector_Generic:Conn_02x04_Odd_Even J3
-U 1 1 61A8D1FB
-P 4350 4100
-F 0 "J3" H 4400 4325 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 4400 4326 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4350 4100 50  0001 C CNN
-F 3 "~" H 4350 4100 50  0001 C CNN
-	1    4350 4100
+L Connector:TestPoint TP1
+U 1 1 61B20BED
+P 4300 3850
+F 0 "TP1" V 4350 4200 50  0000 C CNN
+F 1 "TestPoint" V 4250 4200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 3850 50  0001 C CNN
+F 3 "~" H 4500 3850 50  0001 C CNN
+	1    4300 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61B219D6
+P 4300 4050
+F 0 "TP2" V 4350 4400 50  0000 C CNN
+F 1 "TestPoint" V 4250 4400 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4050 50  0001 C CNN
+F 3 "~" H 4500 4050 50  0001 C CNN
+	1    4300 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61B26C75
+P 4300 4250
+F 0 "TP3" V 4350 4600 50  0000 C CNN
+F 1 "TestPoint" V 4250 4600 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4250 50  0001 C CNN
+F 3 "~" H 4500 4250 50  0001 C CNN
+	1    4300 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 61B2C02E
+P 4300 4450
+F 0 "TP4" V 4350 4800 50  0000 C CNN
+F 1 "TestPoint" V 4250 4800 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4450 50  0001 C CNN
+F 3 "~" H 4500 4450 50  0001 C CNN
+	1    4300 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 61B31408
+P 4300 4650
+F 0 "TP5" V 4350 5000 50  0000 C CNN
+F 1 "TestPoint" V 4250 5000 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4650 50  0001 C CNN
+F 3 "~" H 4500 4650 50  0001 C CNN
+	1    4300 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 61B36723
+P 4300 4850
+F 0 "TP6" V 4350 5200 50  0000 C CNN
+F 1 "TestPoint" V 4250 5200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 4850 50  0001 C CNN
+F 3 "~" H 4500 4850 50  0001 C CNN
+	1    4300 4850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4300 3850 2    50   Output ~ 0
+I2C_SDA
+Text GLabel 4300 4050 2    50   Output ~ 0
+I2C_SCL
+Text GLabel 4300 4250 2    50   Output ~ 0
+SDB
+Text GLabel 4300 4450 2    50   Output ~ 0
+LED_INTB
+Text GLabel 4300 4650 2    50   Output ~ 0
+ROW_INTA
+$Comp
+L power:GND #PWR0104
+U 1 1 61B3D56A
+P 4300 4850
+F 0 "#PWR0104" H 4300 4600 50  0001 C CNN
+F 1 "GND" H 4305 4677 50  0000 C CNN
+F 2 "" H 4300 4850 50  0001 C CNN
+F 3 "" H 4300 4850 50  0001 C CNN
+	1    4300 4850
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4650 4200
+Wire Notes Line
+	3700 5100 4800 5100
+Wire Notes Line
+	4800 5100 4800 3700
+Wire Notes Line
+	3700 3700 3700 5100
+Wire Notes Line
+	4800 3700 3700 3700
 $EndSCHEMATC
