@@ -86,17 +86,6 @@ F 3 "" H 4850 900 50  0001 C CNN
 	1    4850 900 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Interface_Expansion:MCP23017_SO U3
-U 1 1 626F440B
-P 4850 2100
-F 0 "U3" H 4900 3150 50  0000 L CNN
-F 1 "MCP23017_SO" H 4900 3050 50  0000 L CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 5050 1100 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5050 1000 50  0001 L CNN
-	1    4850 2100
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 2900 5550 2900
 $Comp
@@ -166,30 +155,6 @@ F 5 "C52923" H 5850 1000 50  0001 C CNN "LCSC"
 	1    5850 1000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0101
-U 1 1 618B396E
-P 3550 3150
-F 0 "#PWR0101" H 3550 3000 50  0001 C CNN
-F 1 "+5V" H 3565 3323 50  0000 C CNN
-F 2 "" H 3550 3150 50  0001 C CNN
-F 3 "" H 3550 3150 50  0001 C CNN
-	1    3550 3150
-	1    0    0    -1  
-$EndComp
-Connection ~ 3550 3150
-$Comp
-L power:GND #PWR0102
-U 1 1 618B3976
-P 3550 3350
-F 0 "#PWR0102" H 3550 3100 50  0001 C CNN
-F 1 "GND" H 3555 3177 50  0000 C CNN
-F 2 "" H 3550 3350 50  0001 C CNN
-F 3 "" H 3550 3350 50  0001 C CNN
-	1    3550 3350
-	1    0    0    -1  
-$EndComp
-Connection ~ 3550 3350
 $Comp
 L power:+5V #PWR0103
 U 1 1 618FB12F
@@ -890,31 +855,7 @@ Wire Notes Line
 	2050 3800 2050 5500
 Wire Notes Line
 	3650 3800 3650 5500
-Wire Wire Line
-	1550 2700 1550 2800
-Connection ~ 1550 2800
-Wire Wire Line
-	1550 2900 1550 3200
-Wire Wire Line
-	1550 2800 1550 2900
-Connection ~ 1550 2900
-Connection ~ 2250 3200
-$Comp
-L Interface_Expansion:MCP23017_SO U2
-U 1 1 626E613B
-P 2250 2100
-F 0 "U2" H 2300 3150 50  0000 L CNN
-F 1 "MCP23017_SO" H 2300 3050 50  0000 L CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 2450 1100 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2450 1000 50  0001 L CNN
-	1    2250 2100
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1550 1900
-Wire Wire Line
-	3000 3150 3550 3150
-Wire Wire Line
-	3000 3350 3550 3350
 $Comp
 L Device:C_Small C1
 U 1 1 618B3952
@@ -939,10 +880,6 @@ F 3 "" H 900 1100 50  0001 C CNN
 	1    900  1100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 3150 4100 3150
-Wire Wire Line
-	3550 3350 4100 3350
 Wire Wire Line
 	900  900  1300 900 
 Connection ~ 1300 900 
@@ -1077,4 +1014,35 @@ Wire Notes Line
 	4750 5200 3700 5200
 Wire Notes Line
 	3700 3800 3700 5200
+Connection ~ 2250 3200
+Connection ~ 1550 2900
+Wire Wire Line
+	1550 2900 1550 3200
+Connection ~ 1550 2800
+Wire Wire Line
+	1550 2800 1550 2900
+Wire Wire Line
+	1550 2700 1550 2800
+$Comp
+L Interface_Expansion:MCP23017_SO U2
+U 1 1 626E613B
+P 2250 2100
+F 0 "U2" H 2300 3150 50  0000 L CNN
+F 1 "MCP23017_SO" H 2300 3050 50  0000 L CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 2450 1100 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2450 1000 50  0001 L CNN
+	1    2250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:MCP23017_SO U3
+U 1 1 626F440B
+P 4850 2100
+F 0 "U3" H 4900 3150 50  0000 L CNN
+F 1 "MCP23017_SO" H 4900 3050 50  0000 L CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 5050 1100 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5050 1000 50  0001 L CNN
+	1    4850 2100
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
