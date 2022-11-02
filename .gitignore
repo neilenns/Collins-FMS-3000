@@ -14,6 +14,7 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+Collins-FMS-3000-backups/
 
 # Netlist files (exported from Eeschema)
 *.net
