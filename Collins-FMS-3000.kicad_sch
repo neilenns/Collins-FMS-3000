@@ -7,7 +7,7 @@
   (title_block
     (title "Collins FMS 3000")
     (date "2022-11-02")
-    (rev "")
+    (rev "@version@")
     (comment 3 "info@danecreekphotography.com")
     (comment 4 "Neil Enns")
   )
