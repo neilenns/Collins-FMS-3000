@@ -84,6 +84,7 @@ filters:
       - ["^HTSSOP-", 270]
       - ["^USB_C_Receptacle_XKB_U262-16XN-4BVC11", 180]
       - ["^Relay_DPDT_Omron_G6K-2F-Y", 270]
+      - ["^SOT-223-3_TabPin2", 180]
 
 outputs:
   - name: JLCPCB_gerbers
