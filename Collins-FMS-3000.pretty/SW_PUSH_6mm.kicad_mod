@@ -1,6 +1,6 @@
 (footprint "SW_PUSH_6mm" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 6362A188)
+  (tedit 6362F389)
   (descr "https://www.omron.com/ecb/products/pdf/en-b3f.pdf")
   (tags "tact sw push 6mm")
   (attr through_hole)
@@ -46,8 +46,8 @@
   (pad "2" thru_hole circle (at 6.5 4.5 90) (size 2 2) (drill 1.1) (layers *.Cu *.Mask) (tstamp 60d648cc-baee-4bb6-8bd0-8057f02f620e))
   (pad "3" thru_hole circle (at 3.25 -0.9) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask) (tstamp 47b3739e-28cd-41d9-8716-c935fda19076))
   (pad "4" thru_hole circle (at 3.25 5.45) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask) (tstamp 6faa355f-9d08-4dfa-b3e6-58b461b2063e))
-  (model "${KISYS3DMOD}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.wrl"
-    (offset (xyz 0 0 0))
+  (model "${KIPRJMOD}/3D Models/6x6 LED button.step"
+    (offset (xyz 3.25 -2.25 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )

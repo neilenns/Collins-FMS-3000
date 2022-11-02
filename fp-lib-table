@@ -1,5 +1,4 @@
 (fp_lib_table
   (lib (name "Collins-FMS-3000")(type "KiCad")(uri "${KIPRJMOD}/Collins-FMS-3000.pretty")(options "")(descr ""))
   (lib (name "RP2040_minimal")(type "KiCad")(uri "${KIPRJMOD}/RP2040_minimal.pretty")(options "")(descr ""))
-  (lib (name "CJ4-Autopilot")(type "KiCad")(uri "D:/git/CJ4-Autopilot/CJ4-Autopilot.pretty")(options "")(descr ""))
 )

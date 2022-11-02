@@ -440,7 +440,7 @@
       "idf": "",
       "netlist": "Collins-FMS-3000.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Collins-FMS-3000.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
