@@ -6,7 +6,7 @@
 
   (paper "A4")
   (title_block
-    (date "%%date%%")
+    (date "2022-11-02")
     (rev "%%version%%")
   )
 
@@ -7366,10 +7366,10 @@
   (gr_line (start 73.456395 92.456) (end 73.456395 98.806) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-000061ad48ad))
   (gr_line (start 73.456395 98.806) (end 103.886 98.806) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-000061ad48ba))
   (gr_line (start 13.131395 15.249328) (end 13.131395 35.437426) (layer "Edge.Cuts") (width 0.05) (tstamp dd8bdac5-95c2-41de-ac2e-85ce06bb3ee4))
-  (gr_text "%%version%%" (at 138.607395 20.583328) (layer "B.Cu") (tstamp a8d0f58f-0f06-444b-8a1a-c732d79b81a2)
+  (gr_text "" (at 138.607395 20.583328) (layer "B.Cu") (tstamp a8d0f58f-0f06-444b-8a1a-c732d79b81a2)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_text "Collins FMS 3000\nNeil Enns neile@live.com\n%%date%% %%version%%" (at 45.897395 21.345328) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-000061aebed8)
+  (gr_text "Collins FMS 3000\nNeil Enns neile@live.com\n2022-11-02 " (at 45.897395 21.345328) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-000061aebed8)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (gr_text "JLCJLCJLCJLC" (at 117.271395 100.085328 90) (layer "B.SilkS") (tstamp 50bd7bc6-2aea-4db8-83b6-a1bb3ebfc448)

@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Collins FMS 3000")
+    (date "2022-11-02")
+    (rev "")
+  )
+
   (lib_symbols
     (symbol "Collins-FMS-3000:SW_Push_LED" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (id 0) (at 0 -5.08 0)

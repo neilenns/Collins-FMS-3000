@@ -5,8 +5,9 @@
   (paper "A4")
 
   (title_block
-    (date "%%date%%")
-    (rev "%%version%%")
+    (title "Collins FMS 3000")
+    (date "2022-11-02")
+    (rev "")
   )
 
   (lib_symbols

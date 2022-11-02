@@ -1,3 +1,3 @@
-FROM setsoft/kicad_auto:dev
+FROM setsoft/kicad_auto:ki6
 
 RUN apt-get update && apt-get install -y git

@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "CJ4 Autopilot Panel")
-    (date "2022-08-30")
-    (rev "@version@")
+    (title "Collins FMS 3000")
+    (date "2022-11-02")
+    (rev "")
     (comment 1 "neile@live.com")
     (comment 2 "Neil Enns")
   )
@@ -1116,7 +1116,7 @@
   (no_connect (at 227.33 80.01) (uuid b68fda76-0f5e-4a36-bcab-5b3584fae8f4))
   (no_connect (at 227.33 92.71) (uuid be1b5f9b-62f3-4a81-89b6-80c15b0fbb81))
   (no_connect (at 227.33 82.55) (uuid f3e78933-1b5f-46f5-9e9a-3da424117c2a))
-  (no_connect (at 227.33 85.09) (uuid f3e78933-1b5f-46f5-9e9a-3da424117c2a))
+  (no_connect (at 227.33 85.09) (uuid f3e78933-1b5f-46f5-9e9a-3da424117c2b))
   (no_connect (at 227.33 102.87) (uuid f56d247b-859b-4769-925d-c177b8a03b71))
   (no_connect (at 227.33 125.73) (uuid f8143778-a171-4a4b-a3f2-7f352aa63020))
   (no_connect (at 227.33 146.05) (uuid f84157e2-72ff-4eca-a8ee-755ceb68d769))
