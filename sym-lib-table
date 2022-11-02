@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name Collins-FMS-3000)(type Legacy)(uri ${KIPRJMOD}/Collins-FMS-3000.lib)(options "")(descr ""))
-  (lib (name Collins-FMS-3000-rescue)(type Legacy)(uri ${KIPRJMOD}/Collins-FMS-3000-rescue.lib)(options "")(descr ""))
+  (lib (name "Collins-FMS-3000")(type "Legacy")(uri "${KIPRJMOD}/Collins-FMS-3000.lib")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_RP2040")(type "KiCad")(uri "${KIPRJMOD}/MCU_RaspberryPi_RP2040.kicad_sym")(options "")(descr ""))
 )
