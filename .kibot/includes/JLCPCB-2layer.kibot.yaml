@@ -42,7 +42,7 @@ filters:
     negative_bottom: true
     # Rotation list from https://github.com/matthewlai/JLCKicadTools/blob/master/jlc_kicad_tools/cpl_rotations_db.csv
     rotations:
-      - ["^SOT-223-3_TabPin2", 180]
+      - ["^SOT-223", 0]
       - ["^SOIC-16", 90]
       - ["^R_Array_Convex_", 90]
       - ["^R_Array_Concave_", 90]
