@@ -45,7 +45,6 @@ filters:
       - ["^SOIC-16", 90]
       - ["^R_Array_Convex_", 90]
       - ["^R_Array_Concave_", 90]
-      - ["^SOT-223", 180]
       - ["^SOT-23", 180]
       - ["^SOT-89", 180]
       - ["^TSOT-23", 180]
@@ -84,7 +83,6 @@ filters:
       - ["^HTSSOP-", 270]
       - ["^USB_C_Receptacle_XKB_U262-16XN-4BVC11", 180]
       - ["^Relay_DPDT_Omron_G6K-2F-Y", 270]
-      - ["^SOT-223-3_TabPin2", 180]
 
 outputs:
   - name: JLCPCB_gerbers
