@@ -60,7 +60,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: neilenns/kicad6-components
-          path: kicad6-components
+          path: KiCad6-Components
 
       # Get the version of the GitHub release for use later. This is only valid
       # when run in a release context
