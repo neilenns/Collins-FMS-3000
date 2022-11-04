@@ -46,12 +46,21 @@ jobs:
       # Set this to the output folder for all of the generated files. Unless you have a very
       # good reason to change this you should leave it as KiBotOutput.
       OutputFolder: KiBotOutput
+      KICAD6_USER_COMPONENTS_DIR: ${{ GITHUB_WORKSPACE }}/kicad6-components
     runs-on: ubuntu-latest
 
     # These are all the steps that generate the files.
     steps:
-      # Check out the files
-      - uses: actions/checkout@v2
+      # Check out the custom component library for access to the 3D models.
+      - uses: actions/checkout@v3
+        repository: neilenns/kicad6-components
+        with:
+          path: kicad6-components
+
+      # Check out the PCB design
+      - uses: actions/checkout@v3
+        with:
+          path: main
 
       # Get the version of the GitHub release for use later. This is only valid
       # when run in a release context
