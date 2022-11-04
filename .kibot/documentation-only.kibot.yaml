@@ -44,6 +44,9 @@ preflight:
         command: echo $version
       - tag: "date"
         command: git log -1 --format='%as' -- $KIBOT_PCB_NAME
+  set_text_variables:
+    - variable: "KICAD6_USER_COMPONENTS_DIR"
+      text: "${KIPRJMOD}/KiCad6-Components"
 
 global:
   # Sets the default output filename for all generated files. You likely don't have to change this.
