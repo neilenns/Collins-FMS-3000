@@ -6,8 +6,8 @@
 
   (paper "A4")
   (title_block
-    (date "2022-11-02")
-    (rev "%%version%%")
+    (date "${DATE}")
+    (rev "${VERSION}")
   )
 
   (layers
@@ -83,6 +83,8 @@
       (outputdirectory "C:/Users/neile/OneDrive/Desktop/")
     )
   )
+
+  (property "KICAD6_USER_COMPONENTS_DIR" "${KIPRJMOD}/KiCad6-Components")
 
   (net 0 "")
   (net 1 "GND")
@@ -7367,13 +7369,16 @@
   (gr_line (start 73.456395 92.456) (end 73.456395 98.806) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-000061ad48ad))
   (gr_line (start 73.456395 98.806) (end 103.886 98.806) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-000061ad48ba))
   (gr_line (start 13.131395 15.249328) (end 13.131395 35.437426) (layer "Edge.Cuts") (width 0.05) (tstamp dd8bdac5-95c2-41de-ac2e-85ce06bb3ee4))
+  (gr_text "${VERSION}" (at 137.591395 20.837328) (layer "B.Cu") (tstamp 35dfa760-b1e5-4ba6-a557-5fa2ba46066f)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_text "" (at 138.607395 20.583328) (layer "B.Cu") (tstamp a8d0f58f-0f06-444b-8a1a-c732d79b81a2)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_text "@version@" (at 137.337395 19.313328) (layer "B.Cu") (tstamp dfc37e60-f0f0-4ced-80af-fd54faef2eec)
+  (gr_text "" (at 137.337395 19.313328) (layer "B.Cu") (tstamp dfc37e60-f0f0-4ced-80af-fd54faef2eec)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_text "Collins FMS 3000\nNeil Enns neile@live.com\n@date@\n@version@" (at 45.897395 19.821328) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-000061aebed8)
+  (gr_text "Collins FMS 3000\nNeil Enns neile@live.com\n${DATE} ${VERSION}" (at 45.897395 19.821328) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-000061aebed8)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (gr_text "JLCJLCJLCJLC" (at 117.271395 100.085328 90) (layer "B.SilkS") (tstamp 50bd7bc6-2aea-4db8-83b6-a1bb3ebfc448)
