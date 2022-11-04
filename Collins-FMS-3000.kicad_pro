@@ -501,5 +501,8 @@
       "RP2040"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "DATE": "pre-release",
+    "VERSION": "pre-release"
+  }
 }
