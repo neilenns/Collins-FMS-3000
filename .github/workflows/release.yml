@@ -128,7 +128,7 @@ jobs:
       # This is so they're made available when this workflow is run manually from the
       # GitHub actions page.
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: release_files
           path: ${{ env.OutputFolder }}/**
