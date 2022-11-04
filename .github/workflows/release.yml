@@ -47,7 +47,7 @@ jobs:
       Timezone: America/Los_Angeles
       # Set this to the output folder for all of the generated files. Unless you have a very
       # good reason to change this you should leave it as KiBotOutput.
-      OutputFolder: "main/KiBotOutput"
+      OutputFolder: "KiBotOutput"
       KICAD6_USER_COMPONENTS_DIR: "${GITHUB_WORKSPACE}/kicad6-components"
 
     # These are all the steps that generate the files.
@@ -87,12 +87,11 @@ jobs:
       # in the .kibot/release.kibot.yaml folder.
       - name: Generate documentation and fabrication files
         uses: INTI-CMNB/KiBot@v2_k6
-        working-directory: main
         with:
-          config: .kibot/release.kibot.yaml
-          dir: ${{ env.OutputFolder }}
-          schema: ${{ github.event.repository.name }}.kicad_sch
-          board: ${{ github.event.repository.name }}.kicad_pcb
+          config: main/.kibot/release.kibot.yaml
+          dir: main/${{ env.OutputFolder }}
+          schema: main/${{ github.event.repository.name }}.kicad_sch
+          board: main/${{ github.event.repository.name }}.kicad_pcb
 
       # Install the zip command line tool to package up the output
       - name: Install zip
@@ -101,14 +100,14 @@ jobs:
       # Zip all the documentation. Any files in the BOM, PDFs, and Renders subfolder
       # are automatically included.
       - name: Zip documentation
-        run: zip -qq -r "../${{ github.event.repository.name }}-Documentation.zip" BOM PDFs Renders
-        working-directory: ${{ env.OutputFolder }}
+        run: zip -qq -r "../main/${{ github.event.repository.name }}-Documentation.zip" BOM PDFs Renders
+        working-directory: main/${{ env.OutputFolder }}
 
       # Zip the JLCPCB files. This is a special step for JLCPCB because there are gerbers (already zipped by KiBot),
       # BOM, and position files for SMT fabrication.
       - name: Zip JLCPCB fabrication files
-        run: zip -qq -r "../../${{ github.event.repository.name }}-JLCPCB.zip" ${{ github.event.repository.name }}-JLCPCB.zip ${{ github.event.repository.name }}_bom_jlc.csv ${{ github.event.repository.name }}_cpl_jlc.csv
-        working-directory: ${{ env.OutputFolder }}/JLCPCB
+        run: zip -qq -r "../../main/${{ github.event.repository.name }}-JLCPCB.zip" ${{ github.event.repository.name }}-JLCPCB.zip ${{ github.event.repository.name }}_bom_jlc.csv ${{ github.event.repository.name }}_cpl_jlc.csv
+        working-directory: main/${{ env.OutputFolder }}/JLCPCB
 
       # Upload all the zip files to the release. Note that the PCBWay zip was automatically created by KiBot
       # since it doesn't have BOM or position files associated (like JLCPCB does) so the path to the file
@@ -122,10 +121,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: |
-            ${{ env.OutputFolder }}/PDFs/${{ github.event.repository.name }}-schematic.pdf
-            ${{ github.event.repository.name }}-Documentation.zip
-            ${{ github.event.repository.name }}-JLCPCB.zip
-            ${{ env.OutputFolder }}/PCBWay/${{ github.event.repository.name }}-PCBWay.zip
+            main/${{ env.OutputFolder }}/PDFs/${{ github.event.repository.name }}-schematic.pdf
+            main/${{ github.event.repository.name }}-Documentation.zip
+            main/${{ github.event.repository.name }}-JLCPCB.zip
+            main/${{ env.OutputFolder }}/PCBWay/${{ github.event.repository.name }}-PCBWay.zip
 
       # Archive all the artifacts from output and attach to the action's results.
       # This is so they're made available when this workflow is run manually from the
@@ -134,4 +133,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: release_files
-          path: ${{ env.OutputFolder }}/**
+          path: main/${{ env.OutputFolder }}/**
