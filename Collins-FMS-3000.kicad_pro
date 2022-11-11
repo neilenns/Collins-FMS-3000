@@ -502,7 +502,8 @@
     ]
   ],
   "text_variables": {
-    "DATE": "pre-release",
-    "VERSION": "pre-release"
+    "DATE": "2022-11-04",
+    "KICAD6_USER_COMPONENTS_DIR": "${KIPRJMOD}/KiCad6-Components",
+    "VERSION": ""
   }
 }
