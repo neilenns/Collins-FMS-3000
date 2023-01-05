@@ -931,7 +931,7 @@
       (reference "C7") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/609ca03a-00b7-47bc-8afa-328973e82972"
-      (reference "C8") (unit 1) (value "100nF") (footprint "Custom_Footprints:Perfect_0402")
+      (reference "C8") (unit 1) (value "1uF") (footprint "Custom_Footprints:Perfect_0402")
     )
     (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/efb99b3a-e8c7-4477-a91e-f0afd1f60b07"
       (reference "C9") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -946,7 +946,7 @@
       (reference "C12") (unit 1) (value "1uF") (footprint "Custom_Footprints:Perfect_0402")
     )
     (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/f467e92c-cfec-45d6-9135-43909aa23e31"
-      (reference "C13") (unit 1) (value "1UF") (footprint "Custom_Footprints:Perfect_0402")
+      (reference "C13") (unit 1) (value "1uF") (footprint "Custom_Footprints:Perfect_0402")
     )
     (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/1a3908e6-1e81-477c-b81d-11898b35bbc6"
       (reference "C14") (unit 1) (value "1uF") (footprint "Custom_Footprints:Perfect_0402")

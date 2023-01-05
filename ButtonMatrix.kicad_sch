@@ -1869,6 +1869,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 826c12c0-ca21-4ca1-a839-13ed896c5d81)
   )
+  (text "I2C address: 0x34" (at 34.29 94.615 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid f2a0e8c1-d354-4dfd-97a2-d73c3c803ac1)
+  )
 
   (label "KEY_INT" (at 43.815 40.005 270)
     (effects (font (size 1.27 1.27)) (justify right bottom))
