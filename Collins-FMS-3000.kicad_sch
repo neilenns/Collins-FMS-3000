@@ -837,6 +837,9 @@
     (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/0c8593e0-56bd-4e57-a8ed-081ad4383168"
       (reference "#PWR06") (unit 1) (value "GND") (footprint "")
     )
+    (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/b905bca0-262d-4025-85e0-f834185bf87a"
+      (reference "#PWR07") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-0000618cd7a3/f0c76910-a391-4de7-9a0c-a563b21a3118"
       (reference "#PWR08") (unit 1) (value "GND") (footprint "")
     )
@@ -845,6 +848,9 @@
     )
     (path "/00000000-0000-0000-0000-0000618cd7a3/a79302b2-d5a4-4f40-b27c-b9a5d0ae30df"
       (reference "#PWR010") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/5b3c6b2f-addb-494a-9415-fc0b11082cb9"
+      (reference "#PWR011") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/af1dbe09-4766-4067-93b1-6a2faaf1c07a"
       (reference "#PWR012") (unit 1) (value "GND") (footprint "")
@@ -1029,6 +1035,9 @@
     (path "/c6e02df9-b218-4a04-ac97-023a5b74f18d"
       (reference "J3") (unit 1) (value "TC2030-IDC-NL") (footprint "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical")
     )
+    (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/7f8398d1-1fcb-4b17-b71c-c5df98433848"
+      (reference "J4") (unit 1) (value "TC2030-IDC-NL") (footprint "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical")
+    )
     (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/8455c001-2ac9-4e12-b18f-2b6245b4b1b8"
       (reference "R1") (unit 1) (value "1k") (footprint "Custom_Footprints:Perfect_0402")
     )
@@ -1064,6 +1073,9 @@
     )
     (path "/00000000-0000-0000-0000-00006265ffae/549e7033-4dcc-4555-9109-356fc2b4cabc"
       (reference "R12") (unit 1) (value "10k") (footprint "Custom_Footprints:Perfect_0402")
+    )
+    (path "/dc0d5261-e4d2-4b54-8008-75fea26fa95d/886df3e6-421d-4890-863e-2722cf5a1571"
+      (reference "R13") (unit 1) (value "10k") (footprint "Custom_Footprints:Perfect_0402")
     )
     (path "/00000000-0000-0000-0000-00006265ffae/00000000-0000-0000-0000-000061b32334"
       (reference "SW1") (unit 1) (value "SW_Push_LED") (footprint "Custom_Footprints:SW_PUSH_LED_THT")
