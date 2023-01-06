@@ -43,8 +43,8 @@ filters:
     # Rotation list from https://github.com/matthewlai/JLCKicadTools/blob/master/jlc_kicad_tools/cpl_rotations_db.csv
     rotations:
       - ["^QFN56P40_700X700X90L40X18T310N", 90]
-      - ["^SOT-223-3_TabPin2", 180]
-      - ["^SOIC-8_5.23x5.23mm_P1.27mm", 270]
+      - ["^SOT-223-3_TabPin2", 0]
+      - ["^SOIC-8_5.23x5.23mm_P1.27mm", 70]
       - ["^Crystal_SMD_3225-4Pin_3.2x2.5mm", 180]
       - ["^R_Array_Convex_", 90]
       - ["^R_Array_Concave_", 90]
