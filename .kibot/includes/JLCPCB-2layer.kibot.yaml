@@ -44,7 +44,7 @@ filters:
     rotations:
       - ["^QFN56P40_700X700X90L40X18T310N", 90]
       - ["^SOT-223-3_TabPin2", 0]
-      - ["^SOIC-8_5.23x5.23mm_P1.27mm", 70]
+      - ["^SOIC-8_5.23x5.23mm_P1.27mm", 90]
       - ["^Crystal_SMD_3225-4Pin_3.2x2.5mm", 180]
       - ["^R_Array_Convex_", 90]
       - ["^R_Array_Concave_", 90]
