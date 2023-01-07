@@ -84,9 +84,9 @@
     )
   )
 
-  (property "DATE" "2022-11-04")
+  (property "DATE" "2023-01-06")
   (property "KICAD6_USER_COMPONENTS_DIR" "${KIPRJMOD}/KiCad6-Components")
-  (property "VERSION" "v0.0.1")
+  (property "VERSION" "")
 
   (net 0 "")
   (net 1 "VBUS")
@@ -195,6 +195,7 @@
   (net 104 "/RP2040/~{RST}")
   (net 105 "unconnected-(J4-Pad2)")
   (net 106 "unconnected-(J4-Pad4)")
+  (net 107 "unconnected-(U2-Pad25)")
 
   (footprint "Custom_Footprints:SW_PUSH_LED_THT" (layer "F.Cu")
     (tedit 638E0B7D) (tstamp 00000000-0000-0000-0000-0000618b28a2)
@@ -6646,7 +6647,8 @@
       (net 7 "/I2C_SCL") (pinfunction "SCL") (pintype "input") (tstamp cf807a79-5b6b-40a6-978c-e8888a804147))
     (pad "24" smd roundrect (at -1.25 1.9375 180) (size 0.25 0.875) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 6 "/KEY_INT") (pinfunction "~INT") (pintype "output") (tstamp 354ac093-e633-41ea-adbb-92864f1a373f))
-    (pad "25" smd rect (at 0 0 180) (size 2.6 2.6) (layers "B.Cu" "B.Mask") (tstamp 9e7aa9de-856e-41dd-b1fb-6d3a66e5a2f1))
+    (pad "25" smd rect (at 0 0 180) (size 2.6 2.6) (layers "B.Cu" "B.Mask")
+      (net 107 "unconnected-(U2-Pad25)") (pintype "no_connect") (tstamp 9e7aa9de-856e-41dd-b1fb-6d3a66e5a2f1))
     (model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/WQFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))

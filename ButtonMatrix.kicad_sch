@@ -205,6 +205,10 @@
           (name "~INT" (effects (font (size 1.27 1.27))))
           (number "24" (effects (font (size 1.27 1.27))))
         )
+        (pin no_connect line (at -2.54 -19.685 90) (length 2.54) hide
+          (name "" (effects (font (size 1.27 1.27))))
+          (number "25" (effects (font (size 1.27 1.27))))
+        )
         (pin bidirectional line (at -14.605 -4.445 0) (length 2.54)
           (name "ROW5" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
@@ -3331,6 +3335,7 @@
     (pin "22" (uuid 2452925e-132d-4992-9132-50bf6f6295a6))
     (pin "23" (uuid 690dab51-8787-4a72-9732-70fa72b70c90))
     (pin "24" (uuid 3965b2f5-8083-4434-b660-fbd8c009922e))
+    (pin "25" (uuid a7c620b2-4b30-4697-a375-b98b9350fdba))
     (pin "3" (uuid 8ec8bd96-066b-4e4e-bde3-fd1b84072eba))
     (pin "4" (uuid 5a378031-a0bf-4c77-abb8-867eb457a500))
     (pin "5" (uuid 5c60cd16-3e15-4340-92ac-08eebdadea3d))
